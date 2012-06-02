@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+div{
+	outline:1px dashed red;
+	min-height:50px;	
+}
+body{
+	background-image:url('images/bg-body.jpg');	
+}
+div.container{
+	
+}
+div.menu{
+	
+}
+div.menu ul{
+	
+}
+div.menu li{
+	
+}
+div.menu a{
+	
+}
