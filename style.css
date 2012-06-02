@@ -1,0 +1,105 @@
+div{
+	/*outline:1px dashed red;*/
+	min-height:100px;
+}
+
+body {
+	background-image:url(images/bg-body.jpg);
+	background-repeat:repeat;
+	background-position:center center;
+}
+
+div.container{
+	/*background-image : url('images/bg1.jpg');
+	background-repeat : no-repeat;*/
+}
+/*-----------------------start header------------------------*/
+div.container-header {
+	min-height : 120px;
+	padding:1px; /*for stick to menu!!*/
+	border-bottom : 1px solid #666;
+	margin-bottom:12px;
+}
+
+div.logo {
+	min-height : 100px;
+	margin-top : 20px;
+	
+}
+/*-----start menu-------*/
+div.menu {
+	min-height : 33px;
+	margin-top : 74px;
+}
+
+div.menu ul {
+	list-style-type : none;
+}
+
+div.menu ul li {
+	float: right;
+	margin-left:20px;	
+	direction : rtl;
+	
+}
+
+div.menu ul li a {
+	display: block;
+	text-decoration: none;
+	padding : 5px 0px;
+	width:120px;
+ 	font-size: 18px;
+	font-family: 'yekan';
+	color: #CCC;
+	/*background-color: #222;*/
+	text-align: right;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 2px #ccc;
+	/*background: rgba(0,0,0,0.7);*/
+	letter-spacing: 1px;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	border-bottom:1px dotted #666;
+}
+
+div.menu:hover li a{
+	text-shadow: 0px 0px 10px #ccc;
+	color: transparent;
+	/*background: rgba(0,0,0,0.2);*/
+}
+div.menu li a:hover{
+	/*background: rgba(0,0,0,1.0);*/
+	text-shadow: 0px 1px 1px #fff;
+}
+
+/*-----end menu-------*/
+
+/*-----------------------end header------------------------*/
+
+/*-----------------------start banner------------------------*/
+div.container-banner {
+	min-height : 355px;
+}
+/*-----------------------end banner------------------------*/
+
+/*-----------------------start subbanner------------------------*/
+div.container-subbanner {
+	min-height : 50px;
+}
+/*-----------------------end subbanner------------------------*/
+
+/*-----------------------start content------------------------*/
+div.container-content {
+	min-height : 280px;
+}
+/*-----------------------end content------------------------*/
+
+/*-----------------------start footer------------------------*/
+div.container-footer {
+	min-height : 40px;
+	border-top:1px solid #666;
+}
+/*-----------------------end footer------------------------*/
