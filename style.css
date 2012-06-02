@@ -70,9 +70,11 @@ div.menu:hover li a{
 	color: transparent;
 	/*background: rgba(0,0,0,0.2);*/
 }
-div.menu li a:hover{
+div.menu li:hover a{
 	/*background: rgba(0,0,0,1.0);*/
 	text-shadow: 0px 1px 1px #fff;
+	color: #fff;
+	border-bottom:1px dotted #fff;
 }
 
 /*-----end menu-------*/
