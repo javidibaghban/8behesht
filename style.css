@@ -7,7 +7,7 @@ body {
 	background-image: url(images/bg-body.jpg);
 	background-repeat: repeat;
 	background-position: center center;
-	
+	text-align:right;
 }
 
 div.container{
@@ -31,14 +31,17 @@ div.logo {
 
 /*-----------------------start subheader------------------------*/
 div.container-subheader {
-	min-height: 60px;
+	min-height: 150px;
+	border-bottom: 1px solid #666;
+	padding:1px;/*--for stick to chiled--*/
 }
 
-div.container-subheader h1{
-	font-family: "Arabic Typesetting";
-	font-size: 24px;
+div.container-subheader div.title{
+	font-family: 'yekan';
+	font-weight: bold;
+	font-size: 45px;
 	color: #fff;
-	
+	margin-top: 90px;
 }
 
 /*-----start menu-------*/
@@ -89,7 +92,7 @@ div.menu li:hover a{
 	/*background: rgba(0,0,0,1.0);*/
 	text-shadow: 0px 1px 1px #fff;
 	color: #fff;
-	border-bottom: 1px dotted #fff;
+	border-bottom: 1px solid #fff;
 }
 
 /*-----end menu-------*/
@@ -158,7 +161,7 @@ div.slider li a{
 }
 
 div.slider li:hover a,
-div.slider li a:active{
+div.slider li.active{
 	background-image:url('images/bullets.png');
 	background-position:-6px 0px;
 	background-repeat:no-repeat;
@@ -210,8 +213,149 @@ div.container-subbanner {
 
 /*-----------------------start content------------------------*/
 div.container-content {
-	min-height: 280px;
+	min-height: 1090px;
 }
+
+div.container-content div.album {
+	min-height: 400px;
+	padding: 1px;	
+}
+
+div.album > div {
+	height: 250px;
+	width: 223px;
+	float: left;
+	margin-top: 15px;
+	margin-right: 15px;
+}
+
+div.album div.lastpic {
+	margin-left: auto;
+	margin-right: 0px;
+	float: none;
+}
+
+div.pics a{
+	display:block;
+	text-decoration:none;
+}
+
+div.product1 {
+	background-image:url('images/mina.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+div.product2 {
+	background-image:url('images/khatam.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+
+div.product3 {
+	background-image:url('images/tandis.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+
+div.product4 {
+	background-image:url('images/berenji.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+
+div.product5 {
+	background-image:url('images/charm.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+
+div.product6 {
+	background-image:url('images/berenjkobi.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+
+div.product7 {
+	background-image:url('images/morasa.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+
+div.product8 {
+	background-image:url('images/mesi.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+
+div.product9 {
+	background-image:url('images/kanafi.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+
+div.product10 {
+	background-image:url('images/romizi.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+
+div.product11 {
+	background-image:url('images/barjaste.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+div.product12 {
+	background-image:url('images/felezi.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+
+div.product13 {
+	background-image:url('images/nazar.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+
+div.product14 {
+	background-image:url('images/aviz.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+div.product15 {
+	background-image:url('images/chobi.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+div.desc {
+	width:223px;
+	height:250px;
+	background-color:yellow;
+	z-index:3;
+	-webkit-transition:background-color .4s;
+	-moz-transition:background-color .4s;
+	display:none;
+}
+
+
+div.pics:hover div.desc {
+	display: block;
+}
+
 /*-----------------------end content------------------------*/
 
 /*-----------------------start footer------------------------*/
