@@ -14,9 +14,11 @@ $(function(){
 			left:left+'px'
 		},500,'linear');
 		
-		btns.eq(last).removeClass('active');
+		btns.eq(last).removeClass('active').css({
+			backgroundPosition:'0 0'},300);
 		
-		btns.eq(n).addClass('active');
+		btns.eq(n).addClass('active').css({
+			backgroundPosition:'-6px 0'},300);
 		last=n;
 	}
 	setInterval(function() {

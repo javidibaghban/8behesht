@@ -7,6 +7,20 @@ body {
 	text-align:right;
 }
 
+@font-face {
+	font-family: 'yekan';
+	src:
+		url('fonts/yekan.eot?#') format('eot');
+	src:
+		local('B Yekan'),
+		local('BYekan'),
+		local('byekan'),
+		url('fonts/yekan.woff') format('woff'),
+		url('fonts/yekan.ttf') format("truetype"),
+		url('fonts/yekan.afm');
+	font-weight:normal;
+	font-style:normal;
+}
 
 div.container{
 	/*background-image: url('images/bg1.jpg');*/
@@ -28,31 +42,17 @@ div.backimage {
 }
 /*-----------------------start header------------------------*/
 div.container-header {
-	min-height: 120px;
+	min-height: 113px;
 	padding: 1px; /*for stick to menu!!*/
 	border-bottom: 1px solid #666;
-	margin-bottom: 12px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
 }
 
 div.logo {
 	min-height: 100px;
 	margin-top: 15px;
 	text-align: left;
-}
-
-/*-----------------------start subheader------------------------*/
-div.container-subheader {
-	min-height: 150px;
-	border-bottom: 1px solid #666;
-	padding:1px;/*--for stick to chiled--*/
-}
-
-div.container-subheader div.title{
-	font-family: 'yekan';
-	font-weight: bold;
-	font-size: 45px;
-	color: #fff;
-	margin-top: 90px;
 }
 
 /*-----start menu-------*/
@@ -95,7 +95,7 @@ div.menu ul li a {
 }
 
 div.menu:hover li a{
-	text-shadow: 0px 0px 4px #ccc;
+	text-shadow: 0px 0px 2px #ccc;
 	color: transparent;
 	/*background: rgba(0,0,0,0.2);*/
 }
@@ -109,6 +109,23 @@ div.menu li:hover a{
 /*-----end menu-------*/
 
 /*-----------------------end header------------------------*/
+
+/*-----------------------start subheader------------------------*/
+div.container-subheader {
+	min-height: 150px;
+	border-bottom: 1px solid #666;
+	padding:1px;/*--for stick to chiled--*/
+}
+
+div.container-subheader div.title{
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+	font-size: 45px;
+	color: #fff;
+	margin-top: 90px;
+}
+
+/*-----------------------end subheader------------------------*/
 
 /*-----------------------start banner------------------------*/
 div.container-banner {
@@ -172,7 +189,7 @@ div.slider li a{
 }
 
 div.slider li:hover a,
-div.slider li.active{
+div.slider li:active{
 	background-image:url('images/bullets.png');
 	background-position:-6px 0px;
 	background-repeat:no-repeat;
@@ -223,8 +240,9 @@ div.container-subbanner {
 
 div.container-subbanner h3.text{
 	font-family: 'yekan';
-	font-size: 22px;
-	font-weight: bold;
+	font-size: 18px;
+	text-align: justify;
+	direction: rtl;
 	color: #fff;
 	padding: 15px 0 15px 0;
 }
@@ -233,7 +251,7 @@ div.container-subbanner h3.text{
 
 /*-----------------------start content------------------------*/
 div.container-content {
-	min-height: 500px;
+	min-height: 300px;
 	padding: 15px 0 15px 0;
 }
 
@@ -246,7 +264,7 @@ div.container-content div.content p {
 }
 
 div.container-content div.album {
-	min-height: 400px;
+
 	padding: 1px;	
 }
 
