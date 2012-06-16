@@ -4,16 +4,27 @@
 }
 */
 body {
-	background-image: url(images/bg-body.jpg);
-	background-repeat: repeat;
-	background-position: center center;
 	text-align:right;
 }
+
 
 div.container{
 	/*background-image: url('images/bg1.jpg');*/
 	/*background-image: url('images/product-bg.jpg');*/
 	background-repeat: no-repeat;
+}
+
+div.backimage {
+	position : fixed;
+	left : 0;
+	right : 0;
+	top : 0;
+	bottom : 0;
+	z-index:-1;
+	background-image : url('images/bg-body.jpg');
+	background-repeat : no-repeat;
+	background-size : cover;
+	background-position : center top;	
 }
 /*-----------------------start header------------------------*/
 div.container-header {
@@ -25,8 +36,8 @@ div.container-header {
 
 div.logo {
 	min-height: 100px;
-	margin-top: 20px;
-	
+	margin-top: 15px;
+	text-align: left;
 }
 
 /*-----------------------start subheader------------------------*/
@@ -209,11 +220,29 @@ div.slider span.next:hover{
 div.container-subbanner {
 	min-height: 50px;
 }
+
+div.container-subbanner h3.text{
+	font-family: 'yekan';
+	font-size: 22px;
+	font-weight: bold;
+	color: #fff;
+	padding: 15px 0 15px 0;
+}
+
 /*-----------------------end subbanner------------------------*/
 
 /*-----------------------start content------------------------*/
 div.container-content {
-	min-height: 1090px;
+	min-height: 500px;
+	padding: 15px 0 15px 0;
+}
+
+div.container-content div.content p {
+	font-family: 'yekan';
+	font-size: 18px;
+	color: #aaa;
+	text-align: justify;
+	direction: rtl;
 }
 
 div.container-content div.album {
@@ -222,8 +251,16 @@ div.container-content div.album {
 }
 
 div.album > div {
+	width: 224px;
 	height: 250px;
-	width: 223px;
+	float: left;
+	margin-top: 15px;
+	margin-right: 15px;
+}
+
+div.album div.imagehome {
+	width: 303px;
+	height: 200px;
 	float: left;
 	margin-top: 15px;
 	margin-right: 15px;
@@ -368,7 +405,7 @@ div.pics div.desc:hover {
 	-moz-transition-duration: 200ms;
 }
 
-div.desc h3.subject {
+h3.name {
 	font-family: 'yekan';
 	font-weight: bold;
 	color: #252525;
@@ -387,6 +424,8 @@ div.view{
 	bottom: 0;
 	z-index: 4;
 }
+
+
 /*-----------------------end content------------------------*/
 
 /*-----------------------start footer------------------------*/
