@@ -1,0 +1,191 @@
+/*div{
+	outline:1px dashed red;
+	
+}*/
+
+body {
+	background-image: url(images/bg-body.jpg);
+	background-repeat: repeat;
+	background-position: center center;
+	text-align:right;
+}
+
+div.container{
+	/*background-image: url('images/bg1.jpg');*/
+	/*background-image: url('images/product-bg.jpg');*/
+	background-repeat: no-repeat;
+}
+/*-----------------------start header------------------------*/
+div.container-header {
+	min-height: 120px;
+	padding: 1px; /*for stick to menu!!*/
+	border-bottom: 1px solid #666;
+	margin-bottom: 12px;
+}
+
+div.logo {
+	min-height: 100px;
+	margin-top: 15px;
+	text-align: left;
+}
+
+/*-----------------------start subheader------------------------*/
+div.container-subheader {
+	min-height: 150px;
+	border-bottom: 1px solid #666;
+	padding:1px;/*--for stick to chiled--*/
+}
+
+div.container-subheader div.title{
+	font-family: 'yekan';
+	font-weight: bold;
+	font-size: 45px;
+	color: #fff;
+	margin-top: 90px;
+}
+
+/*-----start menu-------*/
+div.menu {
+	min-height: 33px;
+	margin-top: 74px;
+}
+
+div.menu ul {
+	list-style-type: none;
+}
+
+div.menu ul li {
+	float: right;
+	margin-left: 20px;	
+	direction: rtl;
+	
+}
+
+div.menu ul li a {
+	display: block;
+	text-decoration: none;
+	padding: 5px 0px;
+	width: 120px;
+ 	font-size: 18px;
+	font-family: 'yekan';
+	color: #CCC;
+	/*background-color: #222;*/
+	text-align: right;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 2px #ccc;
+	/*background: rgba(0,0,0,0.7);*/
+	letter-spacing: 1px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+	-ms-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+	border-bottom: 1px dotted #666;
+}
+
+div.menu:hover li a{
+	text-shadow:1px 0px 2px #ccc;
+	color: transparent;
+	/*background: rgba(0,0,0,0.2);*/
+}
+div.menu li:hover a{
+	/*background: rgba(0,0,0,1.0);*/
+	text-shadow: 0px 1px 1px #fff;
+	color: #fff;
+	border-bottom: 1px solid #fff;
+}
+
+/*-----end menu-------*/
+
+/*-----------------------end header------------------------*/
+
+
+/*-----------------------start contact------------------------*/
+div.container-content {
+	min-height: 870px;
+	
+}
+div.information{
+	padding:1px;
+	margin-top:55px;
+}
+div.information div.map {
+	min-height:320px;
+	width:470px;
+	margin-left:25px;
+	margin-top:-1px;
+	
+	
+	
+}
+div.informatoin div.info {
+	min-height: 300px;
+	padding:1px;
+	margin:20px 25px 10px;
+	line-height:1;
+}
+div.info h5{
+	font-size:15px;
+	font-family:'yekan';
+	color:#DDD;
+	padding-right:5px;
+	
+}
+
+#tit{
+	font-weight:bold;
+	color:#DDD;
+	font-size:16px;
+	margin-right:-7px;
+}
+
+div.info p {
+	padding-right:14px;
+	font-size:16px;
+	font-family:'yekan';
+	color:#AAA;
+}
+div.sugestion{
+	padding-bottom:35px;
+	padding:1px;
+}
+div.container-content div.msg{
+	min-height:400px;
+	text-align:right;
+	line-height:2.5;
+	margin-right:25px;
+}
+div.msg h4{
+	font-weight:bold;
+	font-family:'yekan';
+	font-size:20px;
+	color:#ddd;
+	padding-right:10px;
+	
+}
+.contact-form{
+	padding-right:7px;
+	
+}
+.send{
+	font-size:14px;
+	font-weight:bold;
+	color:#363636;
+	text-align:center;
+	margin-right:30px;
+}
+div.sugestion div.sandogh{
+	background-image:url('images/DSC_2853.jpg');
+	background-repeat:no-repeat;
+	min-height:360px;
+	padding:1px;
+	margin-top:65px;
+	margin-left:25px;
+	
+}
+/*-----------------------start footer------------------------*/
+div.container-footer {
+	min-height: 40px;
+	border-top: 1px solid #666;
+}
+/*-----------------------end footer------------------------*/
