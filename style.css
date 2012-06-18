@@ -393,7 +393,7 @@ div.imagehome {
 
 div.desc {
 	width:223px;
-	height:250px;
+	height:248px;
 	background-color:yellow;
 	z-index:3;
 	-webkit-transition: all;
@@ -457,7 +457,7 @@ div.product2 {
 
 
 div.product3 {
-	background-image:url('images/1%20(1).jpg');
+	background-image:url('images/sang-negare.jpg');
 	background-repeat:no-repeat;
 	background-position:center center;
 	width: 225px;
@@ -588,6 +588,7 @@ div.content div.rightcol{
 div.rightcol div.heading h1{
 	font-family: 'yekan';
 	font-size: 28px;
+	font-weight: bold;
 	text-align: justify;
 	letter-spacing: -1px;
 	direction: rtl;
@@ -598,18 +599,36 @@ div.rightcol div.heading h1{
 
 div.rightcol div.maindesc {
 	min-height: 500px;
-	outline:1px solid red;
 	padding: 15px 0 15px 0;
 }
 
+div.rightcol div.maindesc h2{
+	font-family: 'yekan';
+	font-size: 18px;
+	font-weight: bold;
+	text-align: justify;
+	direction: rtl;
+	color: #fff;
+}
+
+div.rightcol div.maindesc p{
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 16px;
+	font-weight: 200;
+	text-align: justify;
+	direction: rtl;
+	color: #999;
+	line-height: 20px;
+	margin: 10px 0;
+	letter-spacing: -1px;
+}
+
 div.rightcol div.goto {
-	outline:1px solid blue;
 	padding: 15px 0 15px 0;	
 }
 
 div.goto ul{
 	list-style-type: none;
-	outline:1px solid yellow;
 }
 
 div.goto ul li div{
@@ -617,7 +636,6 @@ div.goto ul li div{
 	height: 59px;
 	background-image: url('images/li-arrowset.gif');
 	background-repeat: no-repeat;
-	border:1px dashed red;
 }
 
 div.goto ul li {
@@ -637,10 +655,12 @@ div.goto ul li a {
 
 div.goto ul li.uppage div {
 	background-position: -177px 0px;
+	border-left: 1px solid #333;
 }
 
 div.goto ul li.mainpage div {
 	background-position: -59px 0px;
+	border-left: 1px solid #333;
 }
 
 div.goto ul li.backpage div {
@@ -649,6 +669,7 @@ div.goto ul li.backpage div {
 
 div.goto ul li.nextpage div {
 	background-position: -117px 0px;
+	border-left: 1px solid #333;
 }
 
 div.goto ul li.uppage {

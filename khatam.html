@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>8Behesht</title>
+<link type="text/css" rel="stylesheet" href="reset.css" />
+<link type="text/css" rel="stylesheet" href="1styles.css" />
+<link type="text/css" rel="stylesheet" href="style.css" />
+<script type="text/javascript" src="jquery.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+	<a id="top"></a>
+	<div class="container-header">
+		<div class="logo w3 left"><img src="images/logo.jpg" alt="logo"/></div><!-- end logo-->
+		<div class="menu ml5">
+			<ul>
+				<li><a href="#">خانه</a></li>
+				<li><a href="#">درباره ما</a></li>
+				<li><a href="#">محصولات</a></li>
+				<li><a href="#">گالری</a></li>
+				<li><a href="#">تماس با ما</a></li>
+			</ul>
+		</div><!-- end menu-->
+	</div><!-- end header-->
+	<div class="container-subheader">
+		<div class="title">محصولات</div>
+	</div><!-- end subheader-->
+	<div class="container-content">
+		<div class="content">
+			<div class="rightcol right last">
+				<div class="heading"><h1>خاتم سازی</h1></div>
+				<div class="maindesc">
+					<h2>پیشینه</h2>
+					<p>درباره مخترع و مبتکر خاتم بین خاتم‌سازان و هنرمندان روایات گوناگونی وجود دارد ولی آنچه قابل ذکر است آن است که به درستی معلوم نیست اولین بار خاتم‌سازی را چه کسی ابداع کرده است.در دایرةالمعارف فارسی آمده است: «زمان آغاز این هنر دانسته نیست، و آنچه درباره آن گفته می‌شود با افسانه همراه است. برخی از استادان خاتم‌ساز هنوز بر این عقیده‌اند که هنر خاتم‌سازی معجزه ابراهیم پیغمبر است»</p>
+					<h2>آشنایی با هنر خاتم سازی</h2>
+					<p>هنر خاتم‌سازی یکی از مهم‌ترین هنرهای دستی ایران است .این صنعت ارزش هنری فوق العاده زیادی دارد .سابقه خاتم‌سازی درایران از زمانهای خیلی قدیم بوده است .به طورکلی ابتدا باید دید خاتم چیست و خاتم‌ساز یا خاتم‌کار چه کسی است.</p>
+					<p>خاتم ترکیبی است از چند ضلعی‌های منظم با تعداد اضلاع متفاوت که با استفاده از مواد اولیه گوناگون در رنگ‌های مختلف تشکیل می‌شود. پنج، شش ف هشت یا ده ضلعی است.
+
+خاتم از هنرهای دستی دقیق و پرکار است که تولید و ساخت آن احتیاج به دقت و حوصله زیاد دارد .</p>
+					<h2>خاتم کاری در ایران</h2>
+					
+					<p>اوج شکوفایی و تکامل این هنر در دروان صفویه بود، دراین دوران از گوشه و کنار ایران هنرمندان به اصفهان، پایتخت آن زمان آمدند و هنرهای فراموش‌شده این کشور ازنو پایه گذاری شد و هنرمندان ضمن فعالیت در رشته‌های خاتم‌کاری، منبت‌کاری، کاشی‌کاری و گره‌چینی، به ترمیم و ساختن ساختمان‌ها و آثار گذشته و بارگاه‌هاواماکن مقدس تشویق و ترغیب شدند. بعدها در زمان قاجاریه به علت عدم توجه به هنرها این هنر نیز همانند سایر هنرها از درجه اعتبار و اهمیت افتاد و استادان وهنرمندان این رشته دراین دوران در بدترین وسختترین شرایط زندگی می‌کردند.</p>
+					<p>
+
+درسال ۱۳۰۷ اوایل دوران پهلوی مدرسه صنایع مستظرفه به کوشش استاد محمد غفاری (کمال الملک) تأسیس و این هنرستان رونق و توسعه‌ای به هنرهای دستی کشور بخشید و پس ازآن کارگاه‌های خاتم‌سازی و چند کارگاه دیگر در وزارت فرهنگ و هنر سابق تشکیل شد .</p>
+					
+				</div>
+				<div class="goto">
+					<ul>
+						<li class="backpage"><div><a href="#"></a></div></li>
+						<li class="nextpage"><div><a href="#"></a></div></li>
+						<li class="mainpage"><div><a href="products.html"></a></div></li>
+						<li class="uppage"><div><a href="#top"></a></div></li>
+					</ul>
+				</div>
+			</div>
+			<div class="leftcol "></div>
+			<div class="clear"></div>
+		</div>
+		
+	</div><!-- end container-content-->
+	<div class="container-footer"></div><!-- end footer-->
+	
+<div class="backimage"></div>
+</div>
+
+<script>
+
+
+
+$(document).ready(function(){
+
+	/*$("div.goto li div").stop().fadeTo(250, 1);*/
+	
+	$("div.goto li div").hover(function(){
+	
+	$(this).stop().fadeTo(250, 0);
+	
+	},function(){
+	
+		$(this).stop().fadeTo(250, 1);
+	
+	});
+
+
+});
+
+
+</script>
+<script>
+$(document).ready(function(){
+
+$('a[href=#top]').click(function(){
+        $('html, body').animate({scrollTop:0},'slow');
+        return false;
+    });
+});
+</script>
+</body>
+</html>
