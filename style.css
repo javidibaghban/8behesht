@@ -24,7 +24,7 @@ body {
 
 div.container{
 	/*background-image: url('images/bg1.jpg');*/
-	/*background-image: url('images/product-bg.jpg');*/
+	/*background-image: url('images/pro-bg.jpg');*/
 	background-repeat: no-repeat;
 }
 
@@ -572,6 +572,114 @@ div.product15 {
 
 
 /*-----------------------end content------------------------*/
+/*-----------------------start productcontent------------------------*/
+div.container-content div.content {
+	min-height: 200px;
+}
+
+div.content div.rightcol{
+	min-height: 800px;
+	margin-left: 15px;
+	width: 244px;
+	outline:1px solid green;
+	padding: 15px 0 15px 0;
+}
+
+div.rightcol div.heading h1{
+	font-family: 'yekan';
+	font-size: 28px;
+	text-align: justify;
+	letter-spacing: -1px;
+	direction: rtl;
+	color: #fff;
+	border-bottom: 1px dotted #666;
+	padding: 15px 0px 10px 0;
+}
+
+div.rightcol div.maindesc {
+	min-height: 500px;
+	outline:1px solid red;
+	padding: 15px 0 15px 0;
+}
+
+div.rightcol div.goto {
+	outline:1px solid blue;
+	padding: 15px 0 15px 0;	
+}
+
+div.goto ul{
+	list-style-type: none;
+	outline:1px solid yellow;
+}
+
+div.goto ul li div{
+	width: 59px;
+	height: 59px;
+	background-image: url('images/li-arrowset.gif');
+	background-repeat: no-repeat;
+	border:1px dashed red;
+}
+
+div.goto ul li {
+	float: left;
+	width: 59px;
+	height: 59px;
+	background-image: url('images/li-arrowset.gif');
+	background-repeat: no-repeat;
+}
+
+div.goto ul li a {
+	display: block;
+	width: 59px;
+	height: 59px;
+	text-decoration: none;
+}
+
+div.goto ul li.uppage div {
+	background-position: -177px 0px;
+}
+
+div.goto ul li.mainpage div {
+	background-position: -59px 0px;
+}
+
+div.goto ul li.backpage div {
+	background-position: 0px 0px;
+}
+
+div.goto ul li.nextpage div {
+	background-position: -117px 0px;
+}
+
+div.goto ul li.uppage {
+	background-position: -177px -59px;
+	
+}
+
+div.goto ul li.mainpage {
+	background-position: -59px -59px;
+}
+
+div.goto ul li.backpage {
+	background-position: 0px -59px;
+}
+
+div.goto ul li.nextpage{
+	background-position: -117px -59px;
+}
+
+div.goto ul li a{
+	display: block;	
+}
+
+div.content div.leftcol {
+	min-height: 800px;
+	margin-right: 259px;
+	outline:1px solid yellow;
+}
+
+
+/*-----------------------end productcontent------------------------*/
 
 /*-----------------------start footer------------------------*/
 div.container-footer {
