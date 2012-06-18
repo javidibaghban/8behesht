@@ -358,9 +358,17 @@ div.album div.pics {
 }
 
 div.pics div.blackbox {
-	width: 225px;
-	height: 80px;
+	width: 195px;
+	height: 40px;
 	background-color: #0C0C0C;
+	font-family: 'yekan';
+	font-size: 20px;
+	text-align: justify;
+	font-weight: bold;
+	direction: rtl;
+	color: #fff;
+	padding: 20px 15px 20px 15px;
+	letter-spacing: -1px;
 }
 div.album div.lastpic {
 	margin-left: auto;
