@@ -7,6 +7,26 @@ body {
 	text-align:right;
 }
 
+div.preloader{
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	background-color:#111;
+	z-index:10;
+	display:none;
+}
+
+div.preloader div.line{
+	position:absolute;
+	left:0;
+	top:45%;
+	width:10px;
+	height: 5px;
+	background-color: #666;
+}
+
 @font-face {
 	font-family: 'yekan';
 	src:
@@ -529,7 +549,7 @@ div.product9 {
 
 
 div.product10 {
-	background-image:url('images/1%20(13).jpg');
+	background-image:url('images/ghalamkob.jpg');
 	background-repeat:no-repeat;
 	background-position:center center;
 	width: 225px;

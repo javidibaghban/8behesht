@@ -37,7 +37,12 @@
 	
 });
 */
-
+$('div.line').animate({ 
+			width:"100%"
+		},500);
+		
+		
+		
 
 
 
@@ -66,7 +71,9 @@ $('#train').cycle({
     delay: -3000 
 });
 
-
+$(window).load(function(){
+	$('div.preloader').delay(500).fadeOut(500);
+});
 
 
 
