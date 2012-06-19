@@ -7,6 +7,11 @@
 <link type="text/css" rel="stylesheet" href="1styles.css" />
 <link type="text/css" rel="stylesheet" href="style.css" />
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() { $('.project').delay(100).hide().fadeIn(500); } );
+	$(document).ready(function() { $('.project1').delay(250).hide().fadeIn(500); } );
+	$(document).ready(function() { $('.project2').delay(400).hide().fadeIn(500); } );
+</script>
 </head>
 
 <body>
@@ -29,8 +34,8 @@
 		<div class="title">محصولات</div>
 	</div><!-- end subheader-->
 	<div class="container-content">
-		<div class="content">
-			<div class="rightcol right last">
+		<div class="content project">
+			<div class="rightcol right project1 last">
 				<div class="heading"><h1>مسگری</h1></div>
 				<div class="maindesc">
 					<h2>پیشینه</h2>
@@ -56,7 +61,17 @@
 					</ul>
 				</div>
 			</div>
-			<div class="leftcol "></div>
+			<div class="leftcol project2">
+				<div>
+					<img src="images/mesi1.jpg" width="691" height="450" alt="mesi"/>
+				</div>
+				<div>
+					<img src="images/mesi2.jpg" width="691" height="450" alt="mesi"/>
+				</div>
+				<div>
+					<img src="images/mesi3.jpg" width="691" height="450" alt="mesi"/>
+				</div>
+			</div>
 			<div class="clear"></div>
 		</div>
 		

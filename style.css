@@ -581,7 +581,7 @@ div.product15 {
 
 
 /*-----------------------end content------------------------*/
-/*-----------------------start productcontent------------------------*/
+/*------start productcontent-------*/
 div.container-content div.content {
 	min-height: 200px;
 }
@@ -590,7 +590,6 @@ div.content div.rightcol{
 	min-height: 800px;
 	margin-left: 15px;
 	width: 244px;
-	outline:1px solid green;
 	padding: 15px 0 15px 0;
 }
 
@@ -623,10 +622,10 @@ div.rightcol div.maindesc h2{
 div.rightcol div.maindesc p{
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 15px;
-	font-weight: 200;
+	font-weight: 500;
 	text-align: justify;
 	direction: rtl;
-	color: #999;
+	color: #aaa;
 	line-height: 20px;
 	margin: 10px 0;
 	letter-spacing: -1px;
@@ -705,11 +704,15 @@ div.goto ul li a{
 div.content div.leftcol {
 	min-height: 800px;
 	margin-right: 259px;
-	outline:1px solid yellow;
+}
+div.leftcol > div {
+	width: 691px;
+	height: 450px;
+	margin-bottom: 15px;
+	
 }
 
-
-/*-----------------------end productcontent------------------------*/
+/*--------end productcontent------*/
 
 /*-----------------------start footer------------------------*/
 div.container-footer {
