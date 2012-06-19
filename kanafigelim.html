@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>8Behesht</title>
+<link type="text/css" rel="stylesheet" href="reset.css" />
+<link type="text/css" rel="stylesheet" href="1styles.css" />
+<link type="text/css" rel="stylesheet" href="style.css" />
+<script type="text/javascript" src="jquery.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+	<a id="top"></a>
+	<div class="container-header">
+		<div class="logo w3 left"><img src="images/logo.jpg" alt="logo"/></div><!-- end logo-->
+		<div class="menu ml5">
+			<ul>
+				<li><a href="#">خانه</a></li>
+				<li><a href="#">درباره ما</a></li>
+				<li><a href="#">محصولات</a></li>
+				<li><a href="#">گالری</a></li>
+				<li><a href="#">تماس با ما</a></li>
+			</ul>
+		</div><!-- end menu-->
+	</div><!-- end header-->
+	<div class="container-subheader">
+		<div class="title">محصولات</div>
+	</div><!-- end subheader-->
+	<div class="container-content">
+		<div class="content">
+			<div class="rightcol right last">
+				<div class="heading"><h1>گلیم بافی</h1></div>
+				<div class="maindesc">
+					<h2>پیشینه</h2>
+					<p>گلیم بافی از قرن ها پیش در استان یزد به خصوص شهرستان های میبد، خاتم و ابرکوه رایج بوده  است و گفته می شود که بیش از یک هزار سال در این خطه سابقه دارد.</p>
+					<p>
+					گلیم بیش از قالی در کشورمان سابقه و قدمت دارد و در واقع قالی در اثر تکامل گلیم بافی طی قرون و اعصار متمادی پدید آمده است .
+					</p>
+					<h2>آشنایی با هنر گلیم بافی</h2>
+					<p>
+					گِلیم یا پَلاس یکی از انواع صنایع دستی زیراندازی و پوششی است که از ابریشم، موی بز، پشم گوسفند و یا دیگر چهارپایان اهلی بافته می‌شود. گلیم به شکل سنتی‌اش، معمولاً برای پوشاندن زمین، دیوار و یا رواندازی برای حیوانات باربر استفاده می‌شود ولی امروزه به عنوان یک پوشش مدرن برای خانه‌های شهری نیز خریداری می‌شود.
+					</p>
+					<p>گلیم های هر منطقه دارای خصوصیات ویژه ای از نظر طرح و رنگ است و با توجه به طرح و رنگ بندی های آن شناخته می شوند. </p>
+					<p>برای تهیه تار گلیم ، اغلب از نخ پنبه و پشم و در موارد استثنایی از ابریشم استفاده می شود. در گلیم بافی به شیوه « پودپیچی»  علاوه بر نخ تار و پود از نخ پود نازک نیز استفاده می شود و پود به حال پیچش از میان نخ تار و پود نازک عبور می کند و با شانه بافندگی ، کوبیده می شود.
+</p>
+					<h2>گلیم بافی در ایران</h2>
+					<p> تقریباً در تمام نواحی ایران به ویژه استان آذربایجان شرقی، اردبیل، استان کرمانشاه، استان کردستان، استان فارس، استان کرمان، استان خراسان، و غیره بافته می‌شود. گلیم‌های سیرجان کرمان، عنبران اردبیل، هرسین کرمانشاه از بهترین گلیم‌های ایران هستند.</p>
+				</div>
+				<div class="goto">
+					<ul>
+						<li class="backpage"><div><a href="#"></a></div></li>
+						<li class="nextpage"><div><a href="#"></a></div></li>
+						<li class="mainpage"><div><a href="products.html"></a></div></li>
+						<li class="uppage"><div><a href="#top"></a></div></li>
+					</ul>
+				</div>
+			</div>
+			<div class="leftcol "></div>
+			<div class="clear"></div>
+		</div>
+		
+	</div><!-- end container-content-->
+	<div class="container-footer"></div><!-- end footer-->
+	
+<div class="backimage"></div>
+</div>
+
+<script>
+
+
+
+$(document).ready(function(){
+
+	/*$("div.goto li div").stop().fadeTo(250, 1);*/
+	
+	$("div.goto li div").hover(function(){
+	
+	$(this).stop().fadeTo(250, 0);
+	
+	},function(){
+	
+		$(this).stop().fadeTo(250, 1);
+	
+	});
+
+
+});
+
+
+</script>
+<script>
+$(document).ready(function(){
+
+$('a[href=#top]').click(function(){
+        $('html, body').animate({scrollTop:0},'slow');
+        return false;
+    });
+});
+</script>
+</body>
+</html>

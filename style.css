@@ -347,6 +347,10 @@ div.container-content div.album {
 	padding: 1px;	
 }
 
+div.container-content div.album1 {
+	padding: 1px;	
+}
+
 div.album div.pics {
 	width: 225px;
 	height: 250px;
@@ -371,6 +375,11 @@ div.pics div.blackbox {
 	letter-spacing: -1px;
 }
 div.album div.lastpic {
+	margin-left: auto;
+	margin-right: 0px;
+	float: none;
+}
+div.album1 div.lastpic {
 	margin-left: auto;
 	margin-right: 0px;
 	float: none;
@@ -613,7 +622,7 @@ div.rightcol div.maindesc h2{
 
 div.rightcol div.maindesc p{
 	font-family: Tahoma, Geneva, sans-serif;
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 200;
 	text-align: justify;
 	direction: rtl;

@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>8Behesht</title>
+<link type="text/css" rel="stylesheet" href="reset.css" />
+<link type="text/css" rel="stylesheet" href="1styles.css" />
+<link type="text/css" rel="stylesheet" href="style.css" />
+<script type="text/javascript" src="jquery.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+	<a id="top"></a>
+	<div class="container-header">
+		<div class="logo w3 left"><img src="images/logo.jpg" alt="logo"/></div><!-- end logo-->
+		<div class="menu ml5">
+			<ul>
+				<li><a href="#">خانه</a></li>
+				<li><a href="#">درباره ما</a></li>
+				<li><a href="#">محصولات</a></li>
+				<li><a href="#">گالری</a></li>
+				<li><a href="#">تماس با ما</a></li>
+			</ul>
+		</div><!-- end menu-->
+	</div><!-- end header-->
+	<div class="container-subheader">
+		<div class="title">محصولات</div>
+	</div><!-- end subheader-->
+	<div class="container-content">
+		<div class="content">
+			<div class="rightcol right last">
+				<div class="heading"><h1>پارچه قلمكارو رومیزی</h1></div>
+				<div class="maindesc">
+					<h2>پیشینه</h2>
+					<p>سابقه‌ي توليد پارچه قلمكار به زمان هاي دور برمي گردد، هر چند كه نقطه ي آغازين اين هنر هم چنان ناشناخته است. ليكن اين هنر در شهر اصفهان از روزگار صفويه رواج داشته و هم اكنون بارزترين نقطه‌ي توليد اين صنعت (دستي) در جهان به شمار مي رود.</p>
+					<h2>آشنایی با هنر قلمکاری پارچه   </h2>
+					<p>پس از گزينش پارچه، نخست پارچه را در اندازه‌هاي گوناگون ( روميزي ، روتختي، روبالشي، پرده ، دستمال سفره و ...) برش داده ، آنها را به خانه‌ها مي‌فرستند تا توسط زنان ريشه تابي شود. سپس آنها را مي شويند تا آب برود و كوچك شود، آن گاه به كارگاه مي‌برند و كار هنري بر روي پارچه از اين مرحله آغاز مي‌گردد.</p>
+					<h2>قلمکاری پارچه  در ایران</h2>
+					<p>  قدیمی ترین قالبهای کشف شده نیز قالبهای سنگی هستند که در حفریات نیشابور یافت شده اند. رشت، کاشان، شیراز، اصفهان، سمنان، بروجرد، همدان و نجف آباد از شهرهای مهم تولیدکننده پارچه قلمکار در ایران هستند. </p>
+					<p>  این هنر در قرنهای یازده و دوازده هجری به دلیل ارزانی آن در برابر پارچه های مخمل، زربافت و اطلس با استقبال فراوان مواجه می شود. هندوستان نیز از سالهای دور به تولید این پارچه شهرت داشته است. در حال حاضر اصفهان ازمهمترین مراکز تولید پارچه قلمکار در ایران است.</p>
+				</div>
+				<div class="goto">
+					<ul>
+						<li class="backpage"><div><a href="#"></a></div></li>
+						<li class="nextpage"><div><a href="#"></a></div></li>
+						<li class="mainpage"><div><a href="products.html"></a></div></li>
+						<li class="uppage"><div><a href="#top"></a></div></li>
+					</ul>
+				</div>
+			</div>
+			<div class="leftcol "></div>
+			<div class="clear"></div>
+		</div>
+		
+	</div><!-- end container-content-->
+	<div class="container-footer"></div><!-- end footer-->
+	
+<div class="backimage"></div>
+</div>
+
+<script>
+
+
+
+$(document).ready(function(){
+
+	/*$("div.goto li div").stop().fadeTo(250, 1);*/
+	
+	$("div.goto li div").hover(function(){
+	
+	$(this).stop().fadeTo(250, 0);
+	
+	},function(){
+	
+		$(this).stop().fadeTo(250, 1);
+	
+	});
+
+
+});
+
+
+</script>
+<script>
+$(document).ready(function(){
+
+$('a[href=#top]').click(function(){
+        $('html, body').animate({scrollTop:0},'slow');
+        return false;
+    });
+});
+</script>
+</body>
+</html>

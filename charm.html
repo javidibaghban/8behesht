@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>8Behesht</title>
+<link type="text/css" rel="stylesheet" href="reset.css" />
+<link type="text/css" rel="stylesheet" href="1styles.css" />
+<link type="text/css" rel="stylesheet" href="style.css" />
+<script type="text/javascript" src="jquery.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+	<a id="top"></a>
+	<div class="container-header">
+		<div class="logo w3 left"><img src="images/logo.jpg" alt="logo"/></div><!-- end logo-->
+		<div class="menu ml5">
+			<ul>
+				<li><a href="#">خانه</a></li>
+				<li><a href="#">درباره ما</a></li>
+				<li><a href="#">محصولات</a></li>
+				<li><a href="#">گالری</a></li>
+				<li><a href="#">تماس با ما</a></li>
+			</ul>
+		</div><!-- end menu-->
+	</div><!-- end header-->
+	<div class="container-subheader">
+		<div class="title">محصولات</div>
+	</div><!-- end subheader-->
+	<div class="container-content">
+		<div class="content">
+			<div class="rightcol right last">
+				<div class="heading"><h1> دباغی چرم</h1></div>
+				<div class="maindesc">
+					<h2>پیشینه</h2>
+					<p>استفاده از چرم از زمان انسانهاي نخستين رواج داشته است. انسان اوليه، پي برد براي محافظت از پاهاي خود در مقابل سنگ وخار و خاشاك تكه پوستي سخت به دور آن پيچيد ويا هنگامي كه وي پي برد می شود آب را در مشك نگهداري کرد، توانست خود را از رفتن به رودخانه و چشمه به مدت طولاني بی نیاز سازد. سپس به مرور زمان، دانش استفاده از چرم فزوني يافت و قبايل اوليه از چرم،چادر، بستر، زيرانداز، زره، افسار وكفش مي ساختند.</p>
+					<p>
+					مروزه با وجود گذشت قرنها ، هنوز پوست حیوانات در نقش یکی از مواد اساسی برای تهیه لباس ، پوشاک و وسایل دیگر و نیز جنبه‌های تزئینی همانند معرق چرم و نقاشی، سوخت و حکاکی روی چرم ارزش اقتصادی، صنعتی و هنری خود را حفظ کرده است.
+					</p>
+					<h2>آشنایی با چرم </h2>
+					<p>چرم ماده اي است كه از دباغي پوست خام حيوانات، نظیر گاو، گوسفند، مار و مارمولک ، کروکودیلها و سوسمارها ، کوسه و ... توليد مي­شود. </p>
+					<p> چرم به دو روش دستی و ماشینی دباغی می شود. یک مقایسه کلی بین چرم دستی اصیل و مرغوب و چرم ماشینی، نشان میدهد، که چرم دستی به علت طولانی شدن مدت عمل آوری و استفاده از مازوج و آرد جو در دباغی، نسبت به چرم ماشینی دارای کیفیت بسیار بالاتری است..</p>
+					<h2>چرم در ایران</h2>
+					<p> در حدود 1500سال پیش از میلاد ایرانیان پوستهای بلند و بدون آستین می پوشیدند که تازیر زانوهایشان می رسید به احتمال زیاد مردم ثروتمند آن زمان از پوست یوزپلنگ و مردم فقیر از پوست گوسفند استفاده می کردند تا قبل از مادها و حتی خود مادها ، لباسهایشان همینطور بود و رسم انداختن پوست روی شانه تا امروز در بین چوپانان کوهستان آذربایجان رواج دارد .</p>
+					<p> در فاصله سالهای 224 تا 650 بعد از میلاد مسیح دباغان و پوست اندازان تشکیل یک مجموعه ای بنام سندیکا را دادند که افراد این مجموعه جزء طبقه پیشه وران محسوب می شوند و پرداخت پوست یکی از مشاغل مهم آنزمان بوده است و جزء حرفه هایی بود که از پدر به پسر و از استاد به شاگرد انتقال می یافت و سعی می کردند تا بیگانگان به اسرار رموز آنها پی نبرند.</p>
+				</div>
+				<div class="goto">
+					<ul>
+						<li class="backpage"><div><a href="#"></a></div></li>
+						<li class="nextpage"><div><a href="#"></a></div></li>
+						<li class="mainpage"><div><a href="products.html"></a></div></li>
+						<li class="uppage"><div><a href="#top"></a></div></li>
+					</ul>
+				</div>
+			</div>
+			<div class="leftcol "></div>
+			<div class="clear"></div>
+		</div>
+		
+	</div><!-- end container-content-->
+	<div class="container-footer"></div><!-- end footer-->
+	
+<div class="backimage"></div>
+</div>
+
+<script>
+
+
+
+$(document).ready(function(){
+
+	/*$("div.goto li div").stop().fadeTo(250, 1);*/
+	
+	$("div.goto li div").hover(function(){
+	
+	$(this).stop().fadeTo(250, 0);
+	
+	},function(){
+	
+		$(this).stop().fadeTo(250, 1);
+	
+	});
+
+
+});
+
+
+</script>
+<script>
+$(document).ready(function(){
+
+$('a[href=#top]').click(function(){
+        $('html, body').animate({scrollTop:0},'slow');
+        return false;
+    });
+});
+</script>
+</body>
+</html>

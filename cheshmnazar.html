@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>8Behesht</title>
+<link type="text/css" rel="stylesheet" href="reset.css" />
+<link type="text/css" rel="stylesheet" href="1styles.css" />
+<link type="text/css" rel="stylesheet" href="style.css" />
+<script type="text/javascript" src="jquery.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+	<a id="top"></a>
+	<div class="container-header">
+		<div class="logo w3 left"><img src="images/logo.jpg" alt="logo"/></div><!-- end logo-->
+		<div class="menu ml5">
+			<ul>
+				<li><a href="#">خانه</a></li>
+				<li><a href="#">درباره ما</a></li>
+				<li><a href="#">محصولات</a></li>
+				<li><a href="#">گالری</a></li>
+				<li><a href="#">تماس با ما</a></li>
+			</ul>
+		</div><!-- end menu-->
+	</div><!-- end header-->
+	<div class="container-subheader">
+		<div class="title">محصولات</div>
+	</div><!-- end subheader-->
+	<div class="container-content">
+		<div class="content">
+			<div class="rightcol right last">
+				<div class="heading"><h1>چشم نظر ها</h1></div>
+				<div class="maindesc">
+					<h2>درباره چشم زخم</h2>
+					<p>با پیشرفت جامعه‏ها ممکن است در بین مردم پاره‏ای از باورها کم‏رنگ‏تر و یا به کلی فراموش‏ شود.اعتقاد به چشم‏زخم یک باور دیرینه است.مرور بر پیشینه‏ی تاریخی آن نشان می‏دهد که‏ حتا در دوران پیش از اسلام،در متن اوستایی و پهلوی نیز آثاری از این باور دیده می‏شود.</p>
+					<h2>آشنایی با محصولات چشم نظر</h2>
+					<p>خرمهره در هر نمايشگاه صنايع‌دستي نظر بازديدکنندگان را به خود جلب مي‌کند. خرمهره از جنس سيليس است و با لعابي از اکسيدمس و ساير مواد پوشيده مي‌شود. </p>
+					<p>سيليس (که شيشه از آن ساخته مي شود) را با سريش که حالت چسبندگي دارد مخلوط مي کنند تا خمير شود و قابليت فرم دهي داشته باشد. اکثرا با آن مهره و خرمهره ساخته مي شود و در آفتابکه خشک شد، پخته مي شود.</p>
+					
+					<p> به خرمهره چشم نظر هم گفته مي شود. در اطراف اصفهان به آن «کوجي» هم مي گويند. قديمي ها اعتقاد داشتند رنگ آبي چشم بد را دور مي کند. اين قدر آبي زيبايي است که به جاي ديدن بدي يا نقص، نگاه ها به خرمهره جلب مي شود. نظر چشم بد را میگرفت.</p>
+					<p>  چشم نظر بیشتر بر سر و گردن بچه‌ها و یا حیوانات عزیزی که تامین کننده درامد خانواده بوده آویزان می‌شده‌است. امروزه از آن برای تزئین استفاده می‌شود و کمتر منظور خرافی در آن ملحوظ است.</p>
+				</div>
+				<div class="goto">
+					<ul>
+						<li class="backpage"><div><a href="#"></a></div></li>
+						<li class="nextpage"><div><a href="#"></a></div></li>
+						<li class="mainpage"><div><a href="products.html"></a></div></li>
+						<li class="uppage"><div><a href="#top"></a></div></li>
+					</ul>
+				</div>
+			</div>
+			<div class="leftcol "></div>
+			<div class="clear"></div>
+		</div>
+		
+	</div><!-- end container-content-->
+	<div class="container-footer"></div><!-- end footer-->
+	
+<div class="backimage"></div>
+</div>
+
+<script>
+
+
+
+$(document).ready(function(){
+
+	/*$("div.goto li div").stop().fadeTo(250, 1);*/
+	
+	$("div.goto li div").hover(function(){
+	
+	$(this).stop().fadeTo(250, 0);
+	
+	},function(){
+	
+		$(this).stop().fadeTo(250, 1);
+	
+	});
+
+
+});
+
+
+</script>
+<script>
+$(document).ready(function(){
+
+$('a[href=#top]').click(function(){
+        $('html, body').animate({scrollTop:0},'slow');
+        return false;
+    });
+});
+</script>
+</body>
+</html>

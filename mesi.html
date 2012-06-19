@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>8Behesht</title>
+<link type="text/css" rel="stylesheet" href="reset.css" />
+<link type="text/css" rel="stylesheet" href="1styles.css" />
+<link type="text/css" rel="stylesheet" href="style.css" />
+<script type="text/javascript" src="jquery.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+	<a id="top"></a>
+	<div class="container-header">
+		<div class="logo w3 left"><img src="images/logo.jpg" alt="logo"/></div><!-- end logo-->
+		<div class="menu ml5">
+			<ul>
+				<li><a href="#">خانه</a></li>
+				<li><a href="#">درباره ما</a></li>
+				<li><a href="#">محصولات</a></li>
+				<li><a href="#">گالری</a></li>
+				<li><a href="#">تماس با ما</a></li>
+			</ul>
+		</div><!-- end menu-->
+	</div><!-- end header-->
+	<div class="container-subheader">
+		<div class="title">محصولات</div>
+	</div><!-- end subheader-->
+	<div class="container-content">
+		<div class="content">
+			<div class="rightcol right last">
+				<div class="heading"><h1>مسگری</h1></div>
+				<div class="maindesc">
+					<h2>پیشینه</h2>
+					<p>
+					مسگری یکی از صنایع دستی کهن ایران است. اشیا و ظروف مسی دست ساز از زمانهای دور در موزه‌ها قابل مشاهده هستند
+					</p>
+					<p>پیشینه مسگری در ایران حداقل به پنج هزار سال پیش می‌رسد و به ظن غالب
+اولین فلز مکشوفه بدست انسان همین فلز مس بوده و اولین فلزکاران نیز
+ایرانیان بوده‌اند.</p>
+					<h2>آشنایی با هنر مسگری</h2>
+					<p>پس از استخراج سنگ مس و تبدیل آن به ورقه های مسی این ورقه به دست صنعت گران سپرده می شود که با وسایل ساده ای چون چکش و قلم فولادی آنها را به ظروف مسی تبدیل کنند. </p>
+					<h2>مسگری در ایران</h2>
+					<p> امروزه با استناد به مدارک غیرقابل انکار که از گوشه کنار ایران یافت شده،می توان شمال و مرکز ایران را جزء قدیمی ترین مراکز فلزکاری جهان و نیز فلزکاران ایران از پیشگامان کشف ذوب مس در جهان باستان دانست که فراوانی معادن مس در ایران ، مؤید این نکته است.</p>
+					<p>از جمله مراکز عمده این هنر شهرهای کاشان، اصفهان، کرمان، زنجان و شیراز می‌باشد.</p>
+					<p>صنعت مسگری در کرمان، اصفهان و کاشان و شاید شهرهای دیگر ایران در دوران اسلامی و تا به امروز از رونق و شکوفایی برخوردار بوده به گونه‌ای که در اغلب این شهرها یکی از بازارها با عنوان بازار مسگرها به صاحبان این هنر - صنعت اختصاص داشت. در بازار مسگرهای این شهرها ده‌ها مسگر به قوت بازو و ضرب چکش خود، انواع ظروف، وسایل و اشیا» مسین را می‌ساختند. امروزه در این بازارها هنوز اثاری از این هنر یافت می‌شود.</p>
+				</div>
+				<div class="goto">
+					<ul>
+						<li class="backpage"><div><a href="#"></a></div></li>
+						<li class="nextpage"><div><a href="#"></a></div></li>
+						<li class="mainpage"><div><a href="products.html"></a></div></li>
+						<li class="uppage"><div><a href="#top"></a></div></li>
+					</ul>
+				</div>
+			</div>
+			<div class="leftcol "></div>
+			<div class="clear"></div>
+		</div>
+		
+	</div><!-- end container-content-->
+	<div class="container-footer"></div><!-- end footer-->
+	
+<div class="backimage"></div>
+</div>
+
+<script>
+
+
+
+$(document).ready(function(){
+
+	/*$("div.goto li div").stop().fadeTo(250, 1);*/
+	
+	$("div.goto li div").hover(function(){
+	
+	$(this).stop().fadeTo(250, 0);
+	
+	},function(){
+	
+		$(this).stop().fadeTo(250, 1);
+	
+	});
+
+
+});
+
+
+</script>
+<script>
+$(document).ready(function(){
+
+$('a[href=#top]').click(function(){
+        $('html, body').animate({scrollTop:0},'slow');
+        return false;
+    });
+});
+</script>
+</body>
+</html>
