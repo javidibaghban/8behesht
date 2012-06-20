@@ -14,11 +14,9 @@ $(function(){
 	$('div.preloader').css('display','block');
 	$('div.line').animate({ 
 			'width':'100%'
-	},2000),function(){
+	},3000),function(){
 		$('div.preloader').animate({
 			'background-color':'#fff'	
-		},500,'linear',function(){
-			$('div.preloader').delay(2000).fadeOut(500);	
 		},500,'linear');	
 	};
 });
