@@ -470,9 +470,19 @@ h3.name {
 	font-family: 'yekan';
 	font-weight: bold;
 	color: #252525;
-	white-space: -2px;
+	letter-spacing: -1px;
 	border-bottom:1px dotted #252525;
 	margin:25px 15px 15px 15px;
+}
+
+div.desc p{
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: justify;
+	direction: rtl;
+	color: #252525;
+	margin:0 15px 15px 25px;
 }
 
 div.icon{
@@ -669,6 +679,7 @@ div.rightcol div.maindesc p{
 	margin: 10px 0;
 	letter-spacing: -1px;
 }
+
 
 div.rightcol div.goto {
 	padding: 15px 0 15px 0;	
