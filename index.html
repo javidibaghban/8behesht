@@ -7,17 +7,29 @@
 <link type="text/css" rel="stylesheet" href="1styles.css" />
 <link type="text/css" rel="stylesheet" href="style.css" />
 <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="jquery.cycle.all.js"></script>
 <script type="text/javascript" src="slider.js"></script>
+
+<script type="text/javascript">
+$(function(){
+	$('div.preloader').css('display','block');
+	$('div.line').animate({ 
+			'width':'100%'
+	},2000),function(){
+		$('div.preloader').animate({
+			'background-color':'#fff'	
+		},500,'linear',function(){
+			$('div.preloader').delay(2000).fadeOut(500);	
+		},500,'linear');	
+	};
+});
+</script>
 </head>
 
 <body>
 <div class="preloader">
 	<div class="line"> </div>
 </div>
-<script type="text/javascript">
-	$('div.preloader').css('display','block');
-</script>
+
 <div class="container">
 	<div class="container-header">
 		<div class="logo w3 left"><img src="images/logo.jpg" alt="logo"/></div><!-- end logo-->
@@ -45,7 +57,7 @@
 					
 			</div><!-- end train-->
 			<div class="clear"></div>
-			<ul class="btns">
+			<!--<ul class="btns">
 				<li class="active"><a href="#"></a></li>
 				<li><a href="#"></a></li>
 				<li><a href="#"></a></li>
@@ -57,7 +69,7 @@
 			</ul>
 			<div class="clear"></div>
 			<span class="prev"></span>
-        	<span class="next"></span>
+        	<span class="next"></span>-->
 		</div><!-- end slider-->
 	</div><!-- end banner-->
 	<div class="container-subbanner">

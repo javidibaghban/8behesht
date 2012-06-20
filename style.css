@@ -16,15 +16,34 @@ div.preloader{
 	background-color:#111;
 	z-index:10;
 	display:none;
+	animation:myfirst 5s;
+	/*-moz-animation:myfirst 5s; 
+	-webkit-animation:myfirst 5s; */
+}
+/*
+@keyframes myfirst
+{
+from {background: red;}
+to {background: yellow;}
 }
 
+@-moz-keyframes myfirst 
+{
+from {background: red;}
+to {background: yellow;}
+}
+
+@-webkit-keyframes myfirst 
+{
+from {background: red;}
+to {background: yellow;}
+} */
 div.preloader div.line{
 	position:absolute;
 	left:0;
-	top:45%;
-	width:10px;
-	height: 5px;
-	background-color: #666;
+	top:50%;
+	height: 3px;
+	background-color: #333;
 }
 
 @font-face {
@@ -170,14 +189,14 @@ div.slider div.train{
 	-moz-transition:left 1.5s;
 }
 
-/*div.slider div.train > div{
+div.slider div.train > div{
 	position:absolute;
 	left: 0;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	background-position: center top;
-}*/
+}
 
 div.slider div.train > div{
 	float: left;
@@ -189,7 +208,7 @@ div.slider div.train > div{
 	display : block;
 }*/
 
-/*div.slider div.img1{
+div.slider div.img1{
 	background-image: url('images/1.jpg');
 	background-repeat: no-repeat;
 	width:950px;
@@ -251,7 +270,7 @@ div.slider div.img8{
 	width:950px;
 	height:450px;
 	
-}*/
+}
 
 div.slider ul.btns{
 	list-style-type:none;
