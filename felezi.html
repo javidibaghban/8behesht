@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>8Behesht</title>
+<link type="text/css" rel="stylesheet" href="reset.css" />
+<link type="text/css" rel="stylesheet" href="1styles.css" />
+<link type="text/css" rel="stylesheet" href="style.css" />
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() { $('.project').delay(100).hide().fadeIn(500); } );
+	$(document).ready(function() { $('.project1').delay(250).hide().fadeIn(500); } );
+	$(document).ready(function() { $('.project2').delay(400).hide().fadeIn(500); } );
+
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+	<a id="top"></a>
+	<div class="container-header">
+		<div class="logo w3 left"><img src="images/logo.jpg" alt="logo"/></div><!-- end logo-->
+		<div class="menu ml5">
+			<ul>
+				<li><a href="index.html">خانه</a></li>
+				<li><a href="#">درباره ما</a></li>
+				<li><a href="products.html">محصولات</a></li>
+				<li><a href="#">گالری</a></li>
+				<li><a href="#">تماس با ما</a></li>
+			</ul>
+		</div><!-- end menu-->
+	</div><!-- end header-->
+	<div class="container-subheader">
+		<div class="title">محصولات</div>
+	</div><!-- end subheader-->
+	<div class="container-content ">
+		<div class="content project">
+			<div class="rightcol right last project1">
+				<div class="heading"><h1>تابلوهای فلزی</h1></div>
+				<div class="maindesc">
+					<h2>آشنایی با تابلوهای فلزی</h2>
+					<p>
+					از ديـر بـاز هنـرمنـدان بـا حکــاکــي بــرروي ورقهــاي بــرنــز ومــس آثــار زيبــا
+و بــديعــي خلــق نموده اند.
+					</p>
+					<p>فلزات به دليل تنوع رنگي و خاصيت فرم‌پذيري در قسمت‌هاي مختلفي از طراحي داخلي استفاده مي‌شود. تابلوهاي فلزي خصوصا نقش‌برجسته‌هاي فلزي كه جديدا وارد بازار دكوراسيون شده‌اند، يكي از روش‌هاي استفاده از فلزات در طراحي داخلي است.
+
+ </p>
+					
+					<p> تابلوهاي فلزي جديدي است كه يك هنرمند با الهام از قديمي‌ترين و اصيل‌ترين نقش و نگارهاي ايران آنها را خلق كرده است.</p>
+					<p> در اين نقش‌برجسته‌ها، هنرمند خلاق سعي كرده‌است آثار سنتي را با فضاي مدرن زندگي امروز تطابق دهد.</p>
+				</div>
+				<div class="goto">
+					<ul>
+						<li class="backpage"><div><a href="naghshbarjaste.html"></a></div></li>
+						<li class="nextpage"><div><a href="cheshmnazar.html"></a></div></li>
+						<li class="mainpage"><div><a href="products.html"></a></div></li>
+						<li class="uppage"><div><a href="#top"></a></div></li>
+					</ul>
+				</div>
+			</div>
+			<div class="leftcol project2">
+				<div >
+					<img src="images/felezi1.jpg" width="691" height="450" alt="felezi"/>
+				</div>
+				<div >
+					<img src="images/felezi2.jpg" width="691" height="450" alt="felezi"/>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+	</div><!-- end container-content-->
+	<div class="container-footer">
+		
+	</div><!-- end footer-->
+	
+<div class="backimage"></div>
+</div>
+
+<script>
+
+
+
+$(document).ready(function(){
+
+	/*$("div.goto li div").stop().fadeTo(250, 1);*/
+	
+	$("div.goto li div").hover(function(){
+	
+	$(this).stop().fadeTo(250, 0);
+	
+	},function(){
+	
+		$(this).stop().fadeTo(250, 1);
+	
+	});
+
+
+});
+
+
+</script>
+<script>
+$(document).ready(function(){
+
+$('a[href=#top]').click(function(){
+        $('html, body').animate({scrollTop:0},'slow');
+        return false;
+    });
+});
+</script>
+</body>
+</html>

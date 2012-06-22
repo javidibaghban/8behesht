@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>8Behesht</title>
+<link type="text/css" rel="stylesheet" href="reset.css" />
+<link type="text/css" rel="stylesheet" href="1styles.css" />
+<link type="text/css" rel="stylesheet" href="style.css" />
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() { $('.project').delay(100).hide().fadeIn(500); } );
+	$(document).ready(function() { $('.project1').delay(250).hide().fadeIn(500); } );
+	$(document).ready(function() { $('.project2').delay(400).hide().fadeIn(500); } );
+</script>
+</head>
+
+<body>
+
+<div class="container">
+	<a id="top"></a>
+	<div class="container-header">
+		<div class="logo w3 left"><img src="images/logo.jpg" alt="logo"/></div><!-- end logo-->
+		<div class="menu ml5">
+			<ul>
+				<li><a href="#">خانه</a></li>
+				<li><a href="#">درباره ما</a></li>
+				<li><a href="#">محصولات</a></li>
+				<li><a href="#">گالری</a></li>
+				<li><a href="#">تماس با ما</a></li>
+			</ul>
+		</div><!-- end menu-->
+	</div><!-- end header-->
+	<div class="container-subheader">
+		<div class="title">محصولات</div>
+	</div><!-- end subheader-->
+	<div class="container-content">
+		<div class="content project">
+			<div class="rightcol right project1 last">
+				<div class="heading"><h1>مینا کاری</h1></div>
+				<div class="maindesc">
+					<h2>پیشینه</h2>
+					<p>میناکاری هنری با پیشینه‌ای در حدود پنج هزار سال است که برای زیبایی بخشیدن زیور آلات و ظروف مختلف استفاده می‌شده‌است. این هنر ترکیبی از آتش و خاک است که با هنر نقاشی آمیخته می‌گردد و نقش‌های زیبایی را می‌آفریند. به گفته برخی کارشناسان و در پی تطبیق دادن میناکاری‌های بیزانس با آثار ایرانی، این هنر در ایران شکل گرفته و سپس به دیگر کشورها رفته‌است.</p>
+					<h2>آشنایی با هنر مینا کاری</h2>
+					<p>میناکاری یا میناسازی هنری است که سابقه‌ای در حدود پنج هزار سال دارد و از صنایع دستی محسوب می‌شود. </p>
+					<p> طلا تنها فلزی است که به هنگام ذوب شدن مینا اکسید نمیشود از اینرو امکان اجرای طرحی همراه با جزئیات و با شباهت هر چه تمامتر بر روی مینا را ایجاد می کند در حالی که میناهای مسین و نقره ای چنین کیفیتی را ندارند.شکل‌گیری مینا نیز از ترکیب اکسیدهای فلزات و چند گونه نمک در مجاورت حرارت بالا می‌باشد که رنگ‌ها در طول زمان و بر اساس دما بوجود می‌آیند.</p>
+					<h2>مینا کاری در ایران</h2>
+					<p> امروزه این هنر بیشتر بر روی مس انجام می‌شود ولی می‌توان بر روی طلا و نقره نیز آن را به عمل آورد.</p>
+					<p> امروزه در ایران کانون تولید میناکاری شهر اصفهان می‌باشد و استادان برجسته‌ای در تولید آثار مینا مشغول به فعالیت هستند.</p>
+				</div>
+				<div class="goto">
+					<ul>
+						<li class="backpage"><div><a href="products.html"></a></div></li>
+						<li class="nextpage"><div><a href="khatam.html"></a></div></li>
+						<li class="mainpage"><div><a href="products.html"></a></div></li>
+						<li class="uppage"><div><a href="#top"></a></div></li>
+					</ul>
+				</div>
+			</div>
+			<div class="leftcol project2">
+				<div>
+					<img src="images/mina3.jpg" width="691" height="450" alt="mina"/>
+				</div>
+				<div>
+					<img src="images/mina4.jpg" width="691" height="450" alt="mina"/>
+				</div>
+				<div>
+					<img src="images/mina2.jpg" width="338" height="450" alt="mina" style="padding-right:10px"/>
+				
+					<img src="images/mina8.jpg" width="338" height="450" alt="mina"/>
+				</div>
+				
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+	</div><!-- end container-content-->
+	<div class="container-footer"></div><!-- end footer-->
+	
+<div class="backimage"></div>
+</div>
+
+<script>
+
+
+
+$(document).ready(function(){
+
+	/*$("div.goto li div").stop().fadeTo(250, 1);*/
+	
+	$("div.goto li div").hover(function(){
+	
+	$(this).stop().fadeTo(250, 0);
+	
+	},function(){
+	
+		$(this).stop().fadeTo(250, 1);
+	
+	});
+
+
+});
+
+
+</script>
+<script>
+$(document).ready(function(){
+
+$('a[href=#top]').click(function(){
+        $('html, body').animate({scrollTop:0},'slow');
+        return false;
+    });
+});
+</script>
+</body>
+</html>

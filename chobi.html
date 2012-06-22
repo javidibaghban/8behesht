@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>8Behesht</title>
+<link type="text/css" rel="stylesheet" href="reset.css" />
+<link type="text/css" rel="stylesheet" href="1styles.css" />
+<link type="text/css" rel="stylesheet" href="style.css" />
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() { $('.project').delay(100).hide().fadeIn(500); } );
+	$(document).ready(function() { $('.project1').delay(250).hide().fadeIn(500); } );
+	$(document).ready(function() { $('.project2').delay(400).hide().fadeIn(500); } );
+</script>
+</head>
+
+<body>
+
+<div class="container">
+	<a id="top"></a>
+	<div class="container-header">
+		<div class="logo w3 left"><img src="images/logo.jpg" alt="logo"/></div><!-- end logo-->
+		<div class="menu ml5">
+			<ul>
+				<li><a href="index.html">خانه</a></li>
+				<li><a href="#">درباره ما</a></li>
+				<li><a href="products.html">محصولات</a></li>
+				<li><a href="#">گالری</a></li>
+				<li><a href="#">تماس با ما</a></li>
+			</ul>
+		</div><!-- end menu-->
+	</div><!-- end header-->
+	<div class="container-subheader">
+		<div class="title">محصولات</div>
+	</div><!-- end subheader-->
+	<div class="container-content">
+		<div class="content project">
+			<div class="rightcol right project1 last">
+				<div class="heading"><h1>صنایع چوبی</h1></div>
+				<div class="maindesc">
+					<h2>پیشینه</h2>
+					<p>در مورد تاريخچه مصرف و صنايع چوب ايران متأسفانه مدارك و اسناد باستاني نشان مي دهد كه استفاده از چوب براي وسايلي از قبيل نردبان و غيره در اين دوره متداول بوده است . متأسفانه چوب همانند سفال ، فلز و يا ديگر آثار هنري نيست كه در طول هزاران سال باقي بماند ، پوسيدگي چوب يكي از عواملي است كه متأسفانه آگاهي ما را در اين مورد به حد كافي نمي رساند . </p>
+					<h2>آشنایی با صنایع چوبی</h2>
+					<p>محصولات چوبی که توسط ابزار و وسایل مختلف از جمله دستگاه‌های خراطی، وسایل نجاری نظیر اره، سوهان، رنده، مغار و غیره طرح‌ها و نقوش هنری ایجاد می‌گردد. همچنین تولید فرآورده‌های چوبی که با استفاده از روکش حاصله از به هم چسباندن قطعات کوچک چوب و فلز و استخوان ساخته می‌شود.</p>
+					<h2>صنایع چوبی در ایران</h2>
+					<p>امروزه اکثر مصنوعات چوبی توسط کارگاه ها و ماشین آلات تخصصی این صنعت ساخته می شوند، اما هنوز هم استفاده از هنر دست در ساخت مصنوعات چوبی رواج زیادی دارد. منبت کاری، معرق کاری، حکاکی روی چوب و بسیاری هنرهای دیگر که با ابزار ظریف و هنر دست ساخته میشوند، مصنوعات ارزشمندی می باشند.
+</p>
+				</div>
+				<div class="goto">
+					<ul>
+						<li class="backpage"><div><a href="#"></a></div></li>
+						<li class="nextpage"><div><a href="mina.html"></a></div></li>
+						<li class="mainpage"><div><a href="products.html"></a></div></li>
+						<li class="uppage"><div><a href="#top"></a></div></li>
+					</ul>
+				</div>
+			</div>
+			<div class="leftcol project2">
+				<div>
+					<img src="images/chobi1.jpg" width="691" height="450" alt="chobi"/>
+				</div>
+				<div>
+					<img src="images/chobi2.jpg" width="691" height="450" alt="chobi"/>
+				</div>
+				<div>
+					<img src="images/chobi3.jpg" width="691" height="450" alt="chobi"/>
+				</div>
+				<div>
+					<img src="images/chobi4.jpg" width="338" height="450" alt="chobi" style="padding-right:10px;"/>
+					<img src="images/chobi5.jpg" width="338" height="450" alt="chobi"/>
+				</div>
+				
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+	</div><!-- end container-content-->
+	<div class="container-footer"></div><!-- end footer-->
+	
+<div class="backimage"></div>
+</div>
+
+<script>
+
+
+
+$(document).ready(function(){
+
+	/*$("div.goto li div").stop().fadeTo(250, 1);*/
+	
+	$("div.goto li div").hover(function(){
+	
+	$(this).stop().fadeTo(250, 0);
+	
+	},function(){
+	
+		$(this).stop().fadeTo(250, 1);
+	
+	});
+
+
+});
+
+
+</script>
+<script>
+$(document).ready(function(){
+
+$('a[href=#top]').click(function(){
+        $('html, body').animate({scrollTop:0},'slow');
+        return false;
+    });
+});
+</script>
+</body>
+</html>

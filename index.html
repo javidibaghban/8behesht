@@ -8,9 +8,25 @@
 <link type="text/css" rel="stylesheet" href="style.css" />
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="slider.js"></script>
+
+<script type="text/javascript">
+$(function(){
+	$('div.preloader').css('display','block');
+	$('div.line').animate({ 
+			'width':'100%'
+	},3000),function(){
+		$('div.preloader').animate({
+			'background-color':'#fff'	
+		},500,'linear');	
+	};
+});
+</script>
 </head>
 
 <body>
+<div class="preloader">
+	<div class="line"> </div>
+</div>
 
 <div class="container">
 	<div class="container-header">
@@ -19,7 +35,7 @@
 			<ul>
 				<li><a href="#">خانه</a></li>
 				<li><a href="#">درباره ما</a></li>
-				<li><a href="#">محصولات</a></li>
+				<li><a href="products.html">محصولات</a></li>
 				<li><a href="#">گالری</a></li>
 				<li><a href="#">تماس با ما</a></li>
 			</ul>
@@ -27,19 +43,19 @@
 	</div><!-- end header-->
 	<div class="container-banner">
 		<div class="slider">
-			<div class="train">
-				<div><img src="images/1.jpg" width="950" height="350" alt="" title="" /></div>
-				<div><img src="images/2.jpg" width="950" height="350" alt="" title="" /></div>
-				<div><img src="images/3.jpg" width="950" height="350" alt="" title="" /></div>
-				<div><img src="images/4.jpg" width="950" height="350" alt="" title="" /></div>
-				<div><img src="images/5.jpg" width="950" height="350" alt="" title="" /></div>
-				<div><img src="images/6.jpg" width="950" height="350" alt="" title="" /></div>
-				<div><img src="images/7.jpg" width="950" height="350" alt="" title="" /></div>
-				<div><img src="images/8.jpg" width="950" height="350" alt="" title="" /></div>
+			<div class="train" id="train">
+				<div class="img1"><img src="images/1.jpg" width="950" height="350" alt="" title="" /></div>
+				<div class="img2"><img src="images/2.jpg" width="950" height="350" alt="" title="" /></div>
+				<div class="img3"><img src="images/3.jpg" width="950" height="350" alt="" title="" /></div>
+				<div class="img4"><img src="images/4.jpg" width="950" height="350" alt="" title="" /></div>
+				<div class="img5"><img src="images/5.jpg" width="950" height="350" alt="" title="" /></div>
+				<div class="img6"><img src="images/6.jpg" width="950" height="350" alt="" title="" /></div>
+				<div class="img7"><img src="images/7.jpg" width="950" height="350" alt="" title="" /></div>
+				<div class="img8"><img src="images/8.jpg" width="950" height="350" alt="" title="" /></div>
 					
 			</div><!-- end train-->
 			<div class="clear"></div>
-			<ul class="btns">
+			<!--<ul class="btns">
 				<li class="active"><a href="#"></a></li>
 				<li><a href="#"></a></li>
 				<li><a href="#"></a></li>
@@ -51,26 +67,26 @@
 			</ul>
 			<div class="clear"></div>
 			<span class="prev"></span>
-        	<span class="next"></span>
+        	<span class="next"></span>-->
 		</div><!-- end slider-->
 	</div><!-- end banner-->
 	<div class="container-subbanner">
-		<h3 class="text">صنايع دستي ايران محملي براي ميراث فرهنگي و هنري اين مرز و بوم است که ريشه در اعتقادات مذهبي و باورهاي قومي و نيز قوه ابتکار و خلاقيت استادکاران ايراني دارد
+		<h3 class="text">صنايع دستي بيانگر صنعت و هنر نياكان و نمايشگر ذوق و هنر مردم هر كشور است.
 		</h3>
 	</div><!-- end subbanner-->
 	<div class="container-content">
 		<div class="content">
-			<p>صنايع دستي بيانگر صنعت و هنر نياكان و نمايشگر ذوق و هنر مردم هر كشور است.امروز صنايع دستي ايران عليرغم فراز و نشيب هاي فراوان و حتي با توجه به بي مهري هائي كه در برخي از دوران ها پشت سرگذاشته. توانسته است در زمره باارزش ترين هنرهاي كاربردي جامعه مطرح گردد و نه تنها از جنبه هاي فرهنگي بلكه از جهات اقتصادي و اجتماعي نيز احترام و توجه و عنايت جهانيان را به خود جلب كند.فروشگاه صنایع دستی هشت بهشت ارائه دهنده هنر اصیل ایرانی ساخته شده توسط اساتید برجسته می باشد .</p>
+			<p>امروزه صنايع دستي ايران عليرغم فراز و نشيب هاي فراوان و حتي با توجه به بي مهري هائي كه در برخي از دوران ها پشت سرگذاشته. توانسته است در زمره باارزش ترين هنرهاي كاربردي جامعه مطرح گردد و نه تنها از جنبه هاي فرهنگي بلكه از جهات اقتصادي و اجتماعي نيز احترام و توجه و عنايت جهانيان را به خود جلب كند.فروشگاه صنایع دستی هشت بهشت ارائه دهنده هنر اصیل ایرانی ساخته شده توسط اساتید برجسته می باشد .</p>
 		</div>
-		<div class="album">
+		<div class="album1">
 			<div class="imagehome">
-				<img src="images/image1.jpg" width="303" height="200"/>
+				<img src="images/image1.jpg" width="306" height="200"/>
 			</div>
 			<div class="imagehome">
-				<img src="images/image2.jpg" width="303" height="200"/>
+				<img src="images/image2.jpg" width="306" height="200"/>
 			</div>
 			<div class="imagehome lastpic">
-				<img src="images/image3.jpg" width="303" height="200"/>
+				<img src="images/image3.jpg" width="306" height="200"/>
 			</div>
 		</div>
 	</div><!-- end content-->

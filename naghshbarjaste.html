@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>8Behesht</title>
+<link type="text/css" rel="stylesheet" href="reset.css" />
+<link type="text/css" rel="stylesheet" href="1styles.css" />
+<link type="text/css" rel="stylesheet" href="style.css" />
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() { $('.project').delay(100).hide().fadeIn(500); } );
+	$(document).ready(function() { $('.project1').delay(250).hide().fadeIn(500); } );
+	$(document).ready(function() { $('.project2').delay(400).hide().fadeIn(500); } );
+</script>
+</head>
+
+<body>
+
+<div class="container">
+	<a id="top"></a>
+	<div class="container-header">
+		<div class="logo w3 left"><img src="images/logo.jpg" alt="logo"/></div><!-- end logo-->
+		<div class="menu ml5">
+			<ul>
+				<li><a href="index.html">خانه</a></li>
+				<li><a href="#">درباره ما</a></li>
+				<li><a href="products.html">محصولات</a></li>
+				<li><a href="#">گالری</a></li>
+				<li><a href="#">تماس با ما</a></li>
+			</ul>
+		</div><!-- end menu-->
+	</div><!-- end header-->
+	<div class="container-subheader">
+		<div class="title">محصولات</div>
+	</div><!-- end subheader-->
+	<div class="container-content">
+		<div class="content project">
+			<div class="rightcol right project1 last">
+				<div class="heading"><h1>تابلوهای نقش برجسته</h1></div>
+				<div class="maindesc">
+					<h2>پیشینه</h2>
+					<p>نقش برجسته ها در مطالعۀ تاریخ هنر ایران اهمیت ویژه ای دارد و از طریق آنها می توان به بسیاری از روشهای بیان و نیز فنون هنری ایرانیان و دیدگاههای ایشان راه برد. نخستین نقش برجسته های صخره ای در ایران را لولوبیان (کوه نشینان زاگرس در هزارۀ سوم قبل از میلاد) پدید آوردند. آنان در این آثار تحت تأثیر هنر بین النهرین بودند. عیلامیان این سنت را ادامه دادند و صحنه های دینی و مجالس بار پادشاهان را بر صخره ها نقش کردند. در نقوش آنان، نمادهایی چون مار و آب به کار رفته است. نقوشی از آشوریان نیز در مرزهای کنونی ایران، در غرب کشور، شناسایی شده است.</p>
+					<h2>آشنایی با هنر نقش‌برجسته</h2>
+					<p>نقش‌برجسته حجمی است از یک سو بسته و محدود که در آن اشیاء کم‌وبیش به صورت برآمده از سطح نمایش داده شوند. روی هم‌رفته نقش‌برجسته حالتی میان مجسمه‌سازی و نقاشی دارد؛ که معمولاً بدون رنگ‌پردازی ساخته می‌شوند.</p>
+					<h2>نقش‌برجسته در ایران</h2>
+					<p> امروزه آثار تزئینی سفال، از ظروف و اشیاء سفالینه گرفته تا نقش برجسته‌های کوچک و بزرگ، در کشورهای صنعتی و پیشرفته مانند آمریکا و کانادا، اروپا و کشورهای آسیایی طرفداران بسیاری را به خود جلب كرده و این آثار زینت‌بخش فضاهای مختلف عمومی و خصوصی شده‌اند.</p>
+				</div>
+				<div class="goto">
+					<ul>
+						<li class="backpage"><div><a href="romizi.html"></a></div></li>
+						<li class="nextpage"><div><a href="felezi.html"></a></div></li>
+						<li class="mainpage"><div><a href="products.html"></a></div></li>
+						<li class="uppage"><div><a href="#top"></a></div></li>
+					</ul>
+				</div>
+			</div>
+			<div class="leftcol project2 ">
+				<div>
+					<img src="images/barjaste1.jpg" width="691" height="450" alt="barjaste"/>
+				</div>
+				<div>
+					<img src="images/barjaste2.jpg" width="691" height="450" alt="barjaste"/>
+				</div>
+				<div>
+					<img src="images/barjaste3.jpg" width="691" height="450" alt="barjaste"/>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+	</div><!-- end container-content-->
+	<div class="container-footer"></div><!-- end footer-->
+	
+<div class="backimage"></div>
+</div>
+
+<script>
+
+
+
+$(document).ready(function(){
+
+	/*$("div.goto li div").stop().fadeTo(250, 1);*/
+	
+	$("div.goto li div").hover(function(){
+	
+	$(this).stop().fadeTo(250, 0);
+	
+	},function(){
+	
+		$(this).stop().fadeTo(250, 1);
+	
+	});
+
+
+});
+
+
+</script>
+<script>
+$(document).ready(function(){
+
+$('a[href=#top]').click(function(){
+        $('html, body').animate({scrollTop:0},'slow');
+        return false;
+    });
+});
+</script>
+</body>
+</html>

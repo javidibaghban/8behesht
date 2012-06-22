@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>8Behesht</title>
+<link type="text/css" rel="stylesheet" href="reset.css" />
+<link type="text/css" rel="stylesheet" href="1styles.css" />
+<link type="text/css" rel="stylesheet" href="style.css" />
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() { $('.project').delay(100).hide().fadeIn(500); } );
+	$(document).ready(function() { $('.project1').delay(250).hide().fadeIn(500); } );
+	$(document).ready(function() { $('.project2').delay(400).hide().fadeIn(500); } );
+</script>
+</head>
+
+<body>
+
+<div class="container">
+	<a id="top"></a>
+	<div class="container-header">
+		<div class="logo w3 left"><img src="images/logo.jpg" alt="logo"/></div><!-- end logo-->
+		<div class="menu ml5">
+			<ul>
+				<li><a href="#">خانه</a></li>
+				<li><a href="#">درباره ما</a></li>
+				<li><a href="products.html">محصولات</a></li>
+				<li><a href="#">گالری</a></li>
+				<li><a href="#">تماس با ما</a></li>
+			</ul>
+		</div><!-- end menu-->
+	</div><!-- end header-->
+	<div class="container-subheader">
+		<div class="title">محصولات</div>
+	</div><!-- end subheader-->
+	<div class="container-content">
+		<div class="content project">
+			<div class="rightcol right project1 last">
+				<div class="heading"><h1>قلمزنی‌ روی برنج</h1></div>
+				<div class="maindesc">
+					<h2>پیشینه</h2>
+					<p>آنچه امروز بعنوان قلمزنی‌ شناخته میشود و مصنوعات فراوانی‌ اعم‌ از مس‌ و برنج‌ بوسیله آن‌تزئین میگردد در ایران دارای سابقه ای بسیار طولانی‌ است‌. </p>
+					<p>از آثار فلزی دوره‌ هخامنش نمونه‌های بسیاری‌ بدست‌ نیامده تا دور نمای رواج این‌ هنر در‌آن دوران را مشاهده کنیم ولی‌ مجموعه‌ ظرفها و بشقابهای نقره و طلای عصر ساسانی‌ که‌ ‌بدست‌ استادان ایرانی‌ قلم خورده‌ است‌ و سلاطین این‌ سلسله را در بزم یا رزم‌ و شکار ‌نشان میدهد و در موزه‌ ارمیتاژ شهر لنینگراد نگاهداری‌ میشود رواج صنعت قلمزنی‌ را در ‌آن عصر تایید میکند</p>
+					<h2>آشنایی با هنر قلمزنی</h2>
+					
+					<p> مواد اولیه مورد مصرف سازندگان فرآورده‌های مس‌ و برنج‌ شامل‌: مس‌، برنج‌ و آلیاژ هایی‌‌از این‌ دو است‌. </p>
+					<p>
+					ابزار کار صنعتگران این‌ رشته از دو دسته تشکیل میگردد یک‌ دسته ابزاری‌ که‌ در مرحله‌ساخت‌ محصولات مورد مصرف قرار میگیرد مانند دستگاه خم‌ کاری‌، موتور فرچه‌، کوره‌ برقی‌، ‌سندان، چکش، دسته دیگر ابزاری‌ که‌ در مرحله قلمزنی‌ مورد احتیاج است‌ مانند دستگاه قیر ‌آب کنی، پرگار انواع قلم آهنی، چکش و غیره
+					</p>
+					
+					<h2>قلمزنی در ایران</h2>
+					<p>اصفهان همیشه از مراکز مهم صنعت قلمزنی‌ ایران بوده‌ و هست و در حال حاضر بیشترین‌‌تعداد کارگاههای صنایع‌ دستی اصفهان را کارگاههای قلمزنی‌ مس‌ و برنج‌ تشکیل میدهند. </p>
+					
+				</div>
+				<div class="goto">
+					<ul>
+						<li class="backpage"><div><a href="tandis.html"></a></div></li>
+						<li class="nextpage"><div><a href="charm.html"></a></div></li>
+						<li class="mainpage"><div><a href="products.html"></a></div></li>
+						<li class="uppage"><div><a href="#top"></a></div></li>
+					</ul>
+				</div>
+			</div>
+			<div class="leftcol project2">
+				<div>
+					<img src="images/ghalamkari1.jpg" width="691" height="450" alt="ghalamkari"/>
+				</div>
+				<div>
+					<img src="images/ghalamkari2.jpg" width="691" height="450" alt="ghalamkari"/>
+				</div>
+				<div>
+					<img src="images/ghalamkari3.jpg" width="691" height="450" alt="ghalamkari"/>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+	</div><!-- end container-content-->
+	<div class="container-footer"></div><!-- end footer-->
+	
+<div class="backimage"></div>
+</div>
+
+<script>
+
+
+
+$(document).ready(function(){
+
+	/*$("div.goto li div").stop().fadeTo(250, 1);*/
+	
+	$("div.goto li div").hover(function(){
+	
+	$(this).stop().fadeTo(250, 0);
+	
+	},function(){
+	
+		$(this).stop().fadeTo(250, 1);
+	
+	});
+
+
+});
+
+
+</script>
+<script>
+$(document).ready(function(){
+
+$('a[href=#top]').click(function(){
+        $('html, body').animate({scrollTop:0},'slow');
+        return false;
+    });
+});
+</script>
+</body>
+</html>

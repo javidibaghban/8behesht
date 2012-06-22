@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>8Behesht</title>
+<link type="text/css" rel="stylesheet" href="reset.css" />
+<link type="text/css" rel="stylesheet" href="1styles.css" />
+<link type="text/css" rel="stylesheet" href="style.css" />
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() { $('.project').delay(100).hide().fadeIn(500); } );
+	$(document).ready(function() { $('.project1').delay(250).hide().fadeIn(500); } );
+	$(document).ready(function() { $('.project2').delay(400).hide().fadeIn(500); } );
+</script>
+</head>
+
+<body>
+
+<div class="container">
+	<a id="top"></a>
+	<div class="container-header">
+		<div class="logo w3 left"><img src="images/logo.jpg" alt="logo"/></div><!-- end logo-->
+		<div class="menu ml5">
+			<ul>
+				<li><a href="index.html">خانه</a></li>
+				<li><a href="#">درباره ما</a></li>
+				<li><a href="products.html">محصولات</a></li>
+				<li><a href="#">گالری</a></li>
+				<li><a href="#">تماس با ما</a></li>
+			</ul>
+		</div><!-- end menu-->
+	</div><!-- end header-->
+	<div class="container-subheader">
+		<div class="title">محصولات</div>
+	</div><!-- end subheader-->
+	<div class="container-content">
+		<div class="content project">
+			<div class="rightcol right project1 last">
+				<div class="heading"><h1>مرصع کاری</h1></div>
+				<div class="maindesc">
+					<h2>پیشینه</h2>
+					<p>از هزاران سال پیش ساخت زیور آلات و یا ظروف تزئینی و نشاندن نگین بر روی آنها در ایران رایج بوده است. آثاری چون جام ها، کاسه ها و زیور آلاتی جواهر نشان که مربوط به دوره های هخامنشیان،اشکانیان،ساسانی ان و ... می باشد گواه این امر است که هنرمندان از هزاران سال پیش در زمینه نشاندن سنگ های قیمتی و نیمه قیمتی بر روی این اشیاء تبحر داشته اند.</p>
+					<p>
+					بازمانده اصیلی از آن روزگار شاید زیور آلاتی باشد که زنان قبایل چادر نشین مختلف و زنان روستایی از آن استفاده می کردند. اغلب این زیور آلات دارای تزئیناتی زیبا از سنگ های زیبا و درخشان هستند. سنگ هایی چون عقیق جگری و فیروزه و ...
+					</p>
+					<h2>آشنایی با هنر مرصع کاری</h2>
+					<p>یکی از شاخه های صنایع دستی سنگی مرصع کاری است . مرصع به معنی آنچه با جواهر تزئین شده باشد، است.(جواهر نشان)هنر مرصع کاری عبارت است از نشاندن جواهر(سنگهای قیمتی ونیمه قیمتی)بر روی ظروف ، زیور آلات و اشیاء تزئینی دیگر </p>
+					<p> مواد اولیه این هنر انواع سنگهای قیمتی و نیمه قیمتی از قبیل زمرد ، الماس ، فیروزه ، یاقوت ، عقیق ،یشم ميباشد.</p>
+					<p>
+گذاشتن سنگ بر روي طلا یا نقره (یا فلزات مناسب دیگر ) به چهار روش صورت مي پذيرد :1-ريلي
+2-قلم خور
+3-كاسه اي
+4-چنگي
+
+</p>
+					<h2>مرصع کاری در ایران</h2>
+					<p> امروزه از هنر مرصع کاری بیشتر در ساخت زیور آلات استفاده می شود. به همین دلیل هنرمند مرصع کار ، فعالیت خود را پس از آماده شدن زیور آغاز می کند .</p>
+					
+					
+				</div>
+				<div class="goto">
+					<ul>
+						<li class="backpage"><div><a href="berenjkobi.html"></a></div></li>
+						<li class="nextpage"><div><a href="mesi.html"></a></div></li>
+						<li class="mainpage"><div><a href="products.html"></a></div></li>
+						<li class="uppage"><div><a href="#top"></a></div></li>
+					</ul>
+				</div>
+			</div>
+			<div class="leftcol project2">
+				<div>
+					<img src="images/morasa4.jpg" width="691" height="450" alt="morasa"/>
+				</div>
+				<div>
+					<img src="images/morasa2.jpg" width="691" height="450" alt="morasa"/>
+				</div>
+				<div>
+					<img src="images/morasa3.jpg" width="691" height="450" alt="morasa"/>
+				</div>
+				<div>
+					<img src="images/morasa1.jpg" width="691" height="450" alt="morasa"/>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+	</div><!-- end container-content-->
+	<div class="container-footer"></div><!-- end footer-->
+	
+<div class="backimage"></div>
+</div>
+
+<script>
+
+
+
+$(document).ready(function(){
+
+	/*$("div.goto li div").stop().fadeTo(250, 1);*/
+	
+	$("div.goto li div").hover(function(){
+	
+	$(this).stop().fadeTo(250, 0);
+	
+	},function(){
+	
+		$(this).stop().fadeTo(250, 1);
+	
+	});
+
+
+});
+
+
+</script>
+<script>
+$(document).ready(function(){
+
+$('a[href=#top]').click(function(){
+        $('html, body').animate({scrollTop:0},'slow');
+        return false;
+    });
+});
+</script>
+</body>
+</html>

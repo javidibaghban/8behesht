@@ -7,10 +7,63 @@ body {
 	text-align:right;
 }
 
+div.preloader{
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	background-color:#111;
+	z-index:10;
+	display:none;
+	animation:myfirst 5s;
+	/*-moz-animation:myfirst 5s; 
+	-webkit-animation:myfirst 5s; */
+}
+/*
+@keyframes myfirst
+{
+from {background: red;}
+to {background: yellow;}
+}
+
+@-moz-keyframes myfirst 
+{
+from {background: red;}
+to {background: yellow;}
+}
+
+@-webkit-keyframes myfirst 
+{
+from {background: red;}
+to {background: yellow;}
+} */
+div.preloader div.line{
+	position:absolute;
+	left:0;
+	top:50%;
+	height: 3px;
+	background-color: #333;
+}
+
+@font-face {
+	font-family: 'yekan';
+	src:
+		url('fonts/yekan.eot?#') format('eot');
+	src:
+		local('B Yekan'),
+		local('BYekan'),
+		local('byekan'),
+		url('fonts/yekan.woff') format('woff'),
+		url('fonts/yekan.ttf') format("truetype"),
+		url('fonts/yekan.afm');
+	font-weight:normal;
+	font-style:normal;
+}
 
 div.container{
 	/*background-image: url('images/bg1.jpg');*/
-	/*background-image: url('images/product-bg.jpg');*/
+	/*background-image: url('images/pro-bg.jpg');*/
 	background-repeat: no-repeat;
 }
 
@@ -28,31 +81,17 @@ div.backimage {
 }
 /*-----------------------start header------------------------*/
 div.container-header {
-	min-height: 120px;
+	min-height: 113px;
 	padding: 1px; /*for stick to menu!!*/
 	border-bottom: 1px solid #666;
-	margin-bottom: 12px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
 }
 
 div.logo {
 	min-height: 100px;
 	margin-top: 15px;
 	text-align: left;
-}
-
-/*-----------------------start subheader------------------------*/
-div.container-subheader {
-	min-height: 150px;
-	border-bottom: 1px solid #666;
-	padding:1px;/*--for stick to chiled--*/
-}
-
-div.container-subheader div.title{
-	font-family: 'yekan';
-	font-weight: bold;
-	font-size: 45px;
-	color: #fff;
-	margin-top: 90px;
 }
 
 /*-----start menu-------*/
@@ -95,7 +134,7 @@ div.menu ul li a {
 }
 
 div.menu:hover li a{
-	text-shadow: 0px 0px 4px #ccc;
+	text-shadow: 0px 0px 2px #ccc;
 	color: transparent;
 	/*background: rgba(0,0,0,0.2);*/
 }
@@ -110,6 +149,24 @@ div.menu li:hover a{
 
 /*-----------------------end header------------------------*/
 
+/*-----------------------start subheader------------------------*/
+div.container-subheader {
+	min-height: 150px;
+	border-bottom: 1px solid #666;
+	padding:1px;/*--for stick to chiled--*/
+}
+
+div.container-subheader div.title{
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+	font-size: 45px;
+	color: #fff;
+	margin-top: 90px;
+	text-shadow:2px 2px 10px #000;
+}
+
+/*-----------------------end subheader------------------------*/
+
 /*-----------------------start banner------------------------*/
 div.container-banner {
 	min-height: 350px;
@@ -121,6 +178,8 @@ div.slider{
 	height:350px;
 	overflow:hidden;
 	position:relative;
+	-webkit-box-shadow: 0px 0px 25px 10px #111;
+	-moz-box-shadow: 0px 0px 25px 10px #111; 
 }
 
 div.slider div.train{
@@ -131,11 +190,86 @@ div.slider div.train{
 }
 
 div.slider div.train > div{
-	float:left;
+	position:absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-position: center top;
 }
 
-div.slider .train > div > img{
+div.slider div.train > div{
+	float: left;
+	width:950px;
+	height:350px;
+}
+
+/*div.slider .train > div > img{
 	display : block;
+}*/
+
+div.slider div.img1{
+	background-image: url('images/1.jpg');
+	background-repeat: no-repeat;
+	width:950px;
+	height:450px;
+	
+}
+
+div.slider div.img2{
+	background-image: url('images/2.jpg');
+	background-repeat: no-repeat;
+	width:950px;
+	height:450px;
+	
+}
+
+div.slider div.img3{
+	background-image: url('images/3.jpg');
+	background-repeat: no-repeat;
+	width:950px;
+	height:450px;
+	
+}
+
+div.slider div.img4{
+	background-image: url('images/4.jpg');
+	background-repeat: no-repeat;
+	width:950px;
+	height:450px;
+	
+}
+
+div.slider div.img5{
+	background-image: url('images/5.jpg');
+	background-repeat: no-repeat;
+	width:950px;
+	height:450px;
+	
+}
+
+div.slider div.img6{
+	background-image: url('images/6.jpg');
+	background-repeat: no-repeat;
+	width:950px;
+	height:450px;
+	
+}
+
+div.slider div.img7{
+	background-image: url('images/7.jpg');
+	background-repeat: no-repeat;
+	width:950px;
+	height:450px;
+	
+}
+
+div.slider div.img8{
+	background-image: url('images/8.jpg');
+	background-repeat: no-repeat;
+	width:950px;
+	height:450px;
+	
 }
 
 div.slider ul.btns{
@@ -172,7 +306,7 @@ div.slider li a{
 }
 
 div.slider li:hover a,
-div.slider li.active{
+div.slider li:active{
 	background-image:url('images/bullets.png');
 	background-position:-6px 0px;
 	background-repeat:no-repeat;
@@ -223,17 +357,20 @@ div.container-subbanner {
 
 div.container-subbanner h3.text{
 	font-family: 'yekan';
-	font-size: 22px;
-	font-weight: bold;
+	font-size: 18px;
+	text-align: justify;
+	direction: rtl;
 	color: #fff;
+	
 	padding: 15px 0 15px 0;
+	 
 }
 
 /*-----------------------end subbanner------------------------*/
 
 /*-----------------------start content------------------------*/
 div.container-content {
-	min-height: 500px;
+	min-height: 300px;
 	padding: 15px 0 15px 0;
 }
 
@@ -246,27 +383,42 @@ div.container-content div.content p {
 }
 
 div.container-content div.album {
-	min-height: 400px;
 	padding: 1px;	
 }
 
-div.album > div {
-	width: 224px;
+div.container-content div.album1 {
+	padding: 1px;	
+}
+
+div.album div.pics {
+	width: 225px;
 	height: 250px;
 	float: left;
 	margin-top: 15px;
 	margin-right: 15px;
+	-webkit-box-shadow: 0px 0px 15px 10px #111;
+	-moz-box-shadow: 0px 0px 15px 10px #111;
 }
 
-div.album div.imagehome {
-	width: 303px;
-	height: 200px;
-	float: left;
-	margin-top: 15px;
-	margin-right: 15px;
+div.pics div.blackbox {
+	width: 195px;
+	height: 40px;
+	background-color: #0C0C0C;
+	font-family: 'yekan';
+	font-size: 20px;
+	text-align: justify;
+	font-weight: bold;
+	direction: rtl;
+	color: #fff;
+	padding: 20px 15px 20px 15px;
+	letter-spacing: -1px;
 }
-
 div.album div.lastpic {
+	margin-left: auto;
+	margin-right: 0px;
+	float: none;
+}
+div.album1 div.lastpic {
 	margin-left: auto;
 	margin-right: 0px;
 	float: none;
@@ -277,110 +429,19 @@ div.pics a{
 	text-decoration:none;
 }
 
-div.product1 {
-	background-image:url('images/mina.jpg');
-	background-repeat:no-repeat;
-	background-position:center center;
-}
-
-div.product2 {
-	background-image:url('images/khatam.jpg');
-	background-repeat:no-repeat;
-	background-position:center center;
-}
-
-
-div.product3 {
-	background-image:url('images/tandis.jpg');
-	background-repeat:no-repeat;
-	background-position:center center;
-}
-
-
-div.product4 {
-	background-image:url('images/berenji.jpg');
-	background-repeat:no-repeat;
-	background-position:center center;
-}
-
-
-div.product5 {
-	background-image:url('images/charm.jpg');
-	background-repeat:no-repeat;
-	background-position:center center;
-}
-
-
-div.product6 {
-	background-image:url('images/berenjkobi.jpg');
-	background-repeat:no-repeat;
-	background-position:center center;
-}
-
-
-div.product7 {
-	background-image:url('images/morasa.jpg');
-	background-repeat:no-repeat;
-	background-position:center center;
-}
-
-
-div.product8 {
-	background-image:url('images/mesi.jpg');
-	background-repeat:no-repeat;
-	background-position:center center;
-}
-
-
-div.product9 {
-	background-image:url('images/kanafi.jpg');
-	background-repeat:no-repeat;
-	background-position:center center;
-}
-
-
-div.product10 {
-	background-image:url('images/romizi.jpg');
-	background-repeat:no-repeat;
-	background-position:center center;
-}
-
-
-div.product11 {
-	background-image:url('images/barjaste.jpg');
-	background-repeat:no-repeat;
-	background-position:center center;
-}
-
-div.product12 {
-	background-image:url('images/felezi.jpg');
-	background-repeat:no-repeat;
-	background-position:center center;
-}
-
-
-div.product13 {
-	background-image:url('images/nazar.jpg');
-	background-repeat:no-repeat;
-	background-position:center center;
-}
-
-
-div.product14 {
-	background-image:url('images/aviz.jpg');
-	background-repeat:no-repeat;
-	background-position:center center;
-}
-
-div.product15 {
-	background-image:url('images/chobi.jpg');
-	background-repeat:no-repeat;
-	background-position:center center;
+div.imagehome {
+	width: 306px;
+	height: 200px;
+	float: left;
+	margin-top: 15px;
+	margin-right: 15px;
+	-webkit-box-shadow: 0px 0px 15px 10px #111;
+	-moz-box-shadow: 0px 0px 15px 10px #111;
 }
 
 div.desc {
 	width:223px;
-	height:250px;
+	height:248px;
 	background-color:yellow;
 	z-index:3;
 	-webkit-transition: all;
@@ -409,12 +470,22 @@ h3.name {
 	font-family: 'yekan';
 	font-weight: bold;
 	color: #252525;
-	white-space: -2px;
+	letter-spacing: -1px;
 	border-bottom:1px dotted #252525;
 	margin:25px 15px 15px 15px;
 }
 
-div.view{
+div.desc p{
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: justify;
+	direction: rtl;
+	color: #252525;
+	margin:0 15px 15px 25px;
+}
+
+div.icon{
 	background-image: url('images/icon-view-project.gif');
 	background-repeat: no-repeat;
 	width: 39px;
@@ -426,7 +497,272 @@ div.view{
 }
 
 
+
+div.product1 {
+	background-image: url('images/mina1.jpg');
+	background-repeat: no-repeat;
+	width: 225px;
+	height: 170px;
+}
+
+div.product2 {
+	background-image: url('images/1%20(1).jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	width: 225px;
+	height: 170px;
+}
+
+
+div.product3 {
+	background-image:url('images/sang-negare.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	width: 225px;
+	height: 170px;
+}
+
+
+div.product4 {
+	background-image:url('images/1%20(11).jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	width: 225px;
+	height: 170px;
+}
+
+
+div.product5 {
+	background-image:url('images/1%20(7).jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	width: 225px;
+	height: 170px;
+}
+
+
+div.product6 {
+	background-image:url('images/1%20(14).jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	width: 225px;
+	height: 170px;
+}
+
+
+div.product7 {
+	background-image:url('images/1%20(6).jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	width: 225px;
+	height: 170px;
+}
+
+
+div.product8 {
+	background-image:url('images/1%20(5).jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	width: 225px;
+	height: 170px;
+}
+
+
+div.product9 {
+	background-image:url('images/1%20(2).jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	width: 225px;
+	height: 170px;
+}
+
+
+div.product10 {
+	background-image:url('images/ghalamkob.jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	width: 225px;
+	height: 170px;
+}
+
+
+div.product11 {
+	background-image:url('images/1%20(3).jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	width: 225px;
+	height: 170px;
+}
+
+div.product12 {
+	background-image:url('images/1%20(10).jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	width: 225px;
+	height: 170px;
+}
+
+
+div.product13 {
+	background-image:url('images/1%20(8).jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	width: 225px;
+	height: 170px;
+}
+
+
+div.product14 {
+	background-image:url('images/1%20(12).jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	width: 225px;
+	height: 170px;
+}
+
+div.product15 {
+	background-image:url('images/1%20(9).jpg');
+	background-repeat:no-repeat;
+	background-position:center center;
+	width: 225px;
+	height: 170px;
+}
+
+
 /*-----------------------end content------------------------*/
+/*------start productcontent-------*/
+div.container-content div.content {
+	min-height: 200px;
+}
+
+div.content div.rightcol{
+	min-height: 800px;
+	margin-left: 15px;
+	width: 244px;
+	padding: 15px 0 15px 0;
+}
+
+div.rightcol div.heading h1{
+	font-family: 'yekan';
+	font-size: 28px;
+	font-weight: bold;
+	text-align: justify;
+	letter-spacing: -1px;
+	direction: rtl;
+	color: #fff;
+	border-bottom: 1px dotted #666;
+	padding: 15px 0px 10px 0;
+}
+
+div.rightcol div.maindesc {
+	min-height: 500px;
+	padding: 15px 0 15px 0;
+}
+
+div.rightcol div.maindesc h2{
+	font-family: 'yekan';
+	font-size: 18px;
+	font-weight: bold;
+	text-align: justify;
+	direction: rtl;
+	color: #fff;
+}
+
+div.rightcol div.maindesc p{
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+	text-align: justify;
+	direction: rtl;
+	color: #aaa;
+	line-height: 20px;
+	margin: 10px 0;
+	letter-spacing: -1px;
+}
+
+
+div.rightcol div.goto {
+	padding: 15px 0 15px 0;	
+}
+
+div.goto ul{
+	list-style-type: none;
+}
+
+div.goto ul li div{
+	width: 59px;
+	height: 59px;
+	background-image: url('images/li-arrowset.gif');
+	background-repeat: no-repeat;
+}
+
+div.goto ul li {
+	float: left;
+	width: 59px;
+	height: 59px;
+	background-image: url('images/li-arrowset.gif');
+	background-repeat: no-repeat;
+}
+
+div.goto ul li a {
+	display: block;
+	width: 59px;
+	height: 59px;
+	text-decoration: none;
+}
+
+div.goto ul li.uppage div {
+	background-position: -177px 0px;
+	border-left: 1px solid #333;
+}
+
+div.goto ul li.mainpage div {
+	background-position: -59px 0px;
+	border-left: 1px solid #333;
+}
+
+div.goto ul li.backpage div {
+	background-position: 0px 0px;
+}
+
+div.goto ul li.nextpage div {
+	background-position: -117px 0px;
+	border-left: 1px solid #333;
+}
+
+div.goto ul li.uppage {
+	background-position: -177px -59px;
+	
+}
+
+div.goto ul li.mainpage {
+	background-position: -59px -59px;
+}
+
+div.goto ul li.backpage {
+	background-position: 0px -59px;
+}
+
+div.goto ul li.nextpage{
+	background-position: -117px -59px;
+}
+
+div.goto ul li a{
+	display: block;	
+}
+
+div.content div.leftcol {
+	min-height: 800px;
+	margin-right: 259px;
+}
+div.leftcol > div {
+	width: 691px;
+	height: 450px;
+	margin-bottom: 15px;
+	
+}
+
+/*--------end productcontent------*/
 
 /*-----------------------start footer------------------------*/
 div.container-footer {
