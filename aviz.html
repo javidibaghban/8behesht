@@ -7,10 +7,14 @@
 <link type="text/css" rel="stylesheet" href="1styles.css" />
 <link type="text/css" rel="stylesheet" href="style.css" />
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="activemenu.js"></script>
+<!--[if IE]>
+		<script type="text/javascript" src="js/html5.js"></script>
+	<![endif]-->
 <script type="text/javascript">
 	$(document).ready(function() { $('.project').delay(100).hide().fadeIn(500); } );
-	$(document).ready(function() { $('.project1').delay(250).hide().fadeIn(500); } );
-	$(document).ready(function() { $('.project2').delay(400).hide().fadeIn(500); } );
+	$(document).ready(function() { $('.project1').delay(300).hide().fadeIn(500); } );
+	$(document).ready(function() { $('.project2').delay(600).hide().fadeIn(500); } );
 </script>
 </head>
 
@@ -19,14 +23,14 @@
 <div class="container">
 	<a id="top"></a>
 	<div class="container-header">
-		<div class="logo w3 left"><img src="images/logo.jpg" alt="logo"/></div><!-- end logo-->
+		<div class="logo w3 left"></div><!-- end logo-->
 		<div class="menu ml5">
 			<ul>
 				<li><a href="index.html">خانه</a></li>
-				<li><a href="#">درباره ما</a></li>
-				<li><a href="products.html">محصولات</a></li>
-				<li><a href="#">گالری</a></li>
-				<li><a href="#">تماس با ما</a></li>
+				<li><a href="about-us.html">درباره ما</a></li>
+				<li class="active"><a href="products.html">محصولات</a></li>
+				<li><a href="gallery.html">گالری</a></li>
+				<li><a href="contact-us.html">تماس با ما</a></li>
 			</ul>
 		</div><!-- end menu-->
 	</div><!-- end header-->
@@ -39,16 +43,11 @@
 				<div class="heading"><h1>آویزهای شیشه ای</h1></div>
 				<div class="maindesc">
 					<h2>پیشینه</h2>
-					<p></p>
-					<p>
-					
-					</p>
-					<h2></h2>
-					<p></p>
-					<p>
-
-
-</p>
+					<p>قبل از به وجود آمدن تاریخ نوشتاری، انسان ساختن شیشه را فرا گرفت و با افزودن نمکها و اکسیدهای فلزی ، آنرا رنگ آمیزی نمود. وجود این مواد معدنی در درون شیشه موجب میشود که طیفهای خاصی از نور سفید در درون شیشه محبوس شده و چشم انسان آنرا به رنگهایی مختلف ببیند. طلا موجب پیدایش رنگ سرخ بی نظیر، کبالت انواع آبی، نقره زردهای مختلف و طلایی و مس انواع سبز و رنگ آجری را میسازند</p>
+					<h2>آشنایی با شیشه های منقوش</h2>
+					<p>شیشه، ماده ای مرموز به نظر میرسد زیرا به نوعی حاوی خواص هر سه حالت ماده –گاز، مایع و جامد، است</p>
+					<p>شیشه های منقوش مبداء اولین پنجره ها میباشند. این امکان وجود دارد که این تکنیک از جواهرسازی، مینا کاری و موزائیک مشتق شده باشد.</p>
+					<p> شیشه بیشتر شبیه یک مایع بسیار سرد شده است که نور را تسخیر کرده و از درون میدرخشد. این ماده جواهر مانند، از پیش پا افتاده ترین ماده جهان- ماسه- به وجود می آید که با آتش متحول شده و به درجه بالاتری از ارزش و زیبایی میرسد.</p>
 					<h2></h2>
 					<p> </p>
 					
@@ -56,8 +55,8 @@
 				</div>
 				<div class="goto">
 					<ul>
-						<li class="backpage"><div><a href="berenjkobi.html"></a></div></li>
-						<li class="nextpage"><div><a href="mesi.html"></a></div></li>
+						<li class="backpage"><div><a href="cheshmnazar.html"></a></div></li>
+						<li class="nextpage"><div><a href="chobi.html"></a></div></li>
 						<li class="mainpage"><div><a href="products.html"></a></div></li>
 						<li class="uppage"><div><a href="#top"></a></div></li>
 					</ul>
@@ -78,7 +77,12 @@
 		</div>
 		
 	</div><!-- end container-content-->
-	<div class="container-footer"></div><!-- end footer-->
+	<div class="container-footer">
+		<div class="copyright w13">
+					Handicrafts of <a href="http://www.hasht-behesht.ir" target="_blank">8 Behesht </a> <span>&copy;</span> 2012 All rights reserved by 8behesht
+				</div>
+
+	</div><!-- end footer-->
 	
 <div class="backimage"></div>
 </div>
@@ -88,8 +92,6 @@
 
 
 $(document).ready(function(){
-
-	/*$("div.goto li div").stop().fadeTo(250, 1);*/
 	
 	$("div.goto li div").hover(function(){
 	

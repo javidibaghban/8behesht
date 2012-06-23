@@ -7,10 +7,14 @@
 <link type="text/css" rel="stylesheet" href="1styles.css" />
 <link type="text/css" rel="stylesheet" href="style.css" />
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="activemenu.js"></script>
+<!--[if IE]>
+		<script type="text/javascript" src="js/html5.js"></script>
+	<![endif]-->
 <script type="text/javascript">
 	$(document).ready(function() { $('.project').delay(100).hide().fadeIn(500); } );
-	$(document).ready(function() { $('.project1').delay(250).hide().fadeIn(500); } );
-	$(document).ready(function() { $('.project2').delay(400).hide().fadeIn(500); } );
+	$(document).ready(function() { $('.project1').delay(300).hide().fadeIn(500); } );
+	$(document).ready(function() { $('.project2').delay(600).hide().fadeIn(500); } );
 </script>
 </head>
 
@@ -19,14 +23,14 @@
 <div class="container">
 	<a id="top"></a>
 	<div class="container-header">
-		<div class="logo w3 left"><img src="images/logo.jpg" alt="logo"/></div><!-- end logo-->
+		<div class="logo w3 left"></div><!-- end logo-->
 		<div class="menu ml5">
 			<ul>
-				<li><a href="#">خانه</a></li>
-				<li><a href="#">درباره ما</a></li>
-				<li><a href="products.html">محصولات</a></li>
-				<li><a href="#">گالری</a></li>
-				<li><a href="#">تماس با ما</a></li>
+				<li><a href="index.html">خانه</a></li>
+				<li><a href="about-us.html">درباره ما</a></li>
+				<li class="active"><a href="products.html">محصولات</a></li>
+				<li><a href="gallery.html">گالری</a></li>
+				<li><a href="contact-us.html">تماس با ما</a></li>
 			</ul>
 		</div><!-- end menu-->
 	</div><!-- end header-->
@@ -36,18 +40,15 @@
 	<div class="container-content">
 		<div class="content project">
 			<div class="rightcol right project1 last">
-				<div class="heading"><h1>قلمزنی‌ مس‌ و برنج‌‌</h1></div>
+				<div class="heading"><h1>برنجکوبی</h1></div>
 				<div class="maindesc">
 					<h2>پیشینه</h2>
-					<p>در دوران اسلامی‌ تاریخ‌ ایران صنعت قلمزنی‌ رواج فوق العاده‌ داشته است‌ و شاهد بر این‌‌مطلب مجموعه‌ ابریقهای برنزی و آثار زیبای فلزی از نوع بخوردان و ظرفهای آبخوری‌ است‌ که‌ ‌بشکل حیوانات و پرندگان ساخته شده و بیشتر آنها در خراسان و همدان و ری‌ و سمرقند ‌بدست‌ آمده است.</p>
-					<p>
-					جالب‌ترین‌ هنر فلز کاری‌ دوره‌ سلجوقی‌ ترصیعمس‌ قرمز رنگ‌ و دادن‌ نقره بر روی‌ ظروف‌‌برنزی و بعدا روی‌ برنج‌ بوده‌ است‌. هنر طلا کوبی‌ و نقره کوبی‌ مفرغ در سده هشتم و نهم ‌هجری به‌ درجه‌ کمال رسید و در این‌ دوره‌ آثاری‌ مانند قدح و سینی و تنگ و هاون‌ و قلمدان ‌و منقل و آینه و جعبه جواهر و شمعدان ساخته شده است‌. 
-					</p>
-					<h2>آشنایی با هنر قلمزنی‌ مس‌ و برنج‌‌</h2>
-					<p>مواد اولیه مورد مصرف سازندگان فرآورده‌های مس‌ و برنج‌ شامل‌: مس‌، برنج‌ و آلیاژ هایی‌‌از این‌ دو است‌. </p>
+					<p>فلزكاري از جمله هنرهايي است كه در دوره صفويه رونق گرفت و اصفهان را مهد آن مي‌دانند. در گذشته استاد ان فلز كار با ظرافتي دقيق، ورق آهن را با ضرب چكش و سندان و تبحري تمام به علامت‌هاي مذهبي مبدل و سپس آنرا با رشته‌هايي از برنج ونقره ناب به زيبايي مي‌آراستند.</p>
+					
+					<h2>آشنایی با هنر برنجکوبی‌‌</h2>
+					<p>برنجکوبی از شيوه های تزيين مصنوعات فولادی است که در شهر اصفهان رواج دارد. در این رشته از هنر های سنتی، هنرمند به ساخت اشیاء و احجامی با فولاد می پردازد که سطح رویی آنها با مفتول برنج، برنج یا نقره نقش اندازی می گردد. کوفته گری نيز همان برنج کوبی بر روی فولاد است. </p>
 					<p>ابزار کار صنعتگران این‌ رشته از دو دسته تشکیل میگردد یک‌ دسته ابزاری‌ که‌ در مرحله‌ساخت‌ محصولات مورد مصرف قرار میگیرد مانند دستگاه خم‌ کاری‌، موتور فرچه‌، کوره‌ برقی‌، ‌سندان، چکش، دسته دیگر ابزاری‌ که‌ در مرحله قلمزنی‌ مورد احتیاج است‌ مانند دستگاه قیر ‌آب کنی، پرگار انواع قلم آهنی، چکش و غیره..</p>
-					<h2>قلمزنی‌ مس‌ و برنج‌‌ در ایران</h2>
-					<p> اصفهان همیشه از مراکز مهم صنعت قلمزنی‌ ایران بوده‌ و هست و در حال حاضر بیشترین‌‌تعداد کارگاههای صنایع‌ دستی اصفهان را کارگاههای قلمزنی‌ مس‌ و برنج‌ تشکیل میدهند.</p>
+					
 				</div>
 				<div class="goto">
 					<ul>
@@ -74,7 +75,12 @@
 		</div>
 		
 	</div><!-- end container-content-->
-	<div class="container-footer"></div><!-- end footer-->
+	<div class="container-footer">
+		<div class="copyright w13">
+					Handicrafts of <a href="http://www.hasht-behesht.ir" target="_blank">8 Behesht </a> <span>&copy;</span> 2012 All rights reserved by 8behesht
+				</div>
+
+	</div><!-- end footer-->
 	
 <div class="backimage"></div>
 </div>
@@ -84,8 +90,6 @@
 
 
 $(document).ready(function(){
-
-	/*$("div.goto li div").stop().fadeTo(250, 1);*/
 	
 	$("div.goto li div").hover(function(){
 	

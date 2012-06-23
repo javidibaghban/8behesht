@@ -7,10 +7,14 @@
 <link type="text/css" rel="stylesheet" href="1styles.css" />
 <link type="text/css" rel="stylesheet" href="style.css" />
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="activemenu.js"></script>
+<!--[if IE]>
+		<script type="text/javascript" src="js/html5.js"></script>
+	<![endif]-->
 <script type="text/javascript">
 	$(document).ready(function() { $('.project').delay(100).hide().fadeIn(500); } );
-	$(document).ready(function() { $('.project1').delay(250).hide().fadeIn(500); } );
-	$(document).ready(function() { $('.project2').delay(400).hide().fadeIn(500); } );
+	$(document).ready(function() { $('.project1').delay(300).hide().fadeIn(500); } );
+	$(document).ready(function() { $('.project2').delay(600).hide().fadeIn(500); } );
 </script>
 </head>
 
@@ -19,14 +23,14 @@
 <div class="container">
 	<a id="top"></a>
 	<div class="container-header">
-		<div class="logo w3 left"><img src="images/logo.jpg" alt="logo"/></div><!-- end logo-->
+		<div class="logo w3 left"></div><!-- end logo-->
 		<div class="menu ml5">
 			<ul>
 				<li><a href="index.html">خانه</a></li>
-				<li><a href="#">درباره ما</a></li>
-				<li><a href="products.html">محصولات</a></li>
-				<li><a href="#">گالری</a></li>
-				<li><a href="#">تماس با ما</a></li>
+				<li><a href="about-us.html">درباره ما</a></li>
+				<li class="active"><a href="products.html">محصولات</a></li>
+				<li><a href="gallery.html">گالری</a></li>
+				<li><a href="contact-us.html">تماس با ما</a></li>
 			</ul>
 		</div><!-- end menu-->
 	</div><!-- end header-->
@@ -69,7 +73,12 @@
 		</div>
 		
 	</div><!-- end container-content-->
-	<div class="container-footer"></div><!-- end footer-->
+	<div class="container-footer">
+		<div class="copyright w13">
+					Handicrafts of <a href="http://www.hasht-behesht.ir" target="_blank">8 Behesht </a> <span>&copy;</span> 2012 All rights reserved by 8behesht
+				</div>
+
+	</div><!-- end footer-->
 	
 <div class="backimage"></div>
 </div>
@@ -79,8 +88,6 @@
 
 
 $(document).ready(function(){
-
-	/*$("div.goto li div").stop().fadeTo(250, 1);*/
 	
 	$("div.goto li div").hover(function(){
 	
